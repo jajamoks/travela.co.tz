@@ -2,8 +2,9 @@
     <div class="header-mobile__bar">
         <div class="container-fluid">
             <div class="header-mobile-inner">
-                <a class="logo" href="index.html">
-                    <img src="images/icon/logo.png" alt="CoolAdmin" />
+                <a class="logo" href="{{ url('/') }}">
+                  BTS
+                    <!-- <img src="images/icon/logo.png" alt="CoolAdmin" /> -->
                 </a>
                 <button class="hamburger hamburger--slider" type="button">
                     <span class="hamburger-box">
@@ -35,11 +36,11 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="chart.html">
+                    <a href="#">
                         <i class="fas fa-chart-bar"></i>Charts</a>
                 </li>
                 <li>
-                    <a href="table.html">
+                    <a href="#">
                         <i class="fas fa-table"></i>Tables</a>
                 </li>
                 <li>

@@ -1,7 +1,8 @@
 <aside class="menu-sidebar d-none d-lg-block">
     <div class="logo">
         <a href="#">
-            <img src="images/icon/logo.png" alt="{{ config('app.name')}}" />
+          <h4>Bus Ticketing System</h4>
+            <!-- <img src="images/icon/logo.png" alt="{{ config('app.name')}}" /> -->
         </a>
     </div>
     <div class="menu-sidebar__content js-scrollbar1">
@@ -13,12 +14,10 @@
                           </a>
                       </li>
                       <li>
-                          <a href="#">
-                              <i class="fas fa-users"></i>Customers</a>
+                          <a href="#"><i class="fas fa-users"></i>Customers</a>
                       </li>
                       <li>
-                          <a href="#">
-                              <i class="fas fa-file-alt"></i>Booking Details</a>
+                          <a href="#"><i class="fas fa-file-alt"></i> Booking Details</a>
                       </li>
                       <li class="has-sub">
                           <a class="js-arrow" href="#">
