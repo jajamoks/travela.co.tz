@@ -7,3 +7,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
+
+Route::get('/agents', 'AgentController@index');
+
+Route::post('/agents/create', 'AgentController@create');
+
+Route::get('/home', 'AgentController@create');
