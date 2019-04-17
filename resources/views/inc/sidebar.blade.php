@@ -17,7 +17,7 @@
                     <a href="#"><i class="fas fa-users"></i>Customers</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-file-alt"></i> Booking Details</a>
+                    <a href="#"><i class="fas fa-file-alt"></i>Tickets</a>
                 </li>
                 <li class="has-sub">
                     <a class="js-arrow" href="#">

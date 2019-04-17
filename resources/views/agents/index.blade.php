@@ -1,39 +1,50 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-@section('content')
-<div class="main-content">
-    <div class="section__content section__content--p30">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="title-1 m-b-25">Agents</h2>
-                    <div class="table-responsive table--no-card m-b-40">
-                        <table class="table table-borderless table-striped table-earning">
-                            <thead>
-                                <tr>
-                                    <th>Agents ID</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Phone</th>
-                                    <th>Location</th>
-                                    <th class="text-right">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>James Emanuel</td>
-                                    <td>T234 ADF</td>
-                                    <td>Bagamoyo</td>
-                                    <td>23 Jully 2019</td>
-                                    <td class="text-right">Tsh 34,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <title>Agents</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="col-md-4">
+        <form action="/agents/create" method="post">
+            @csrf
+            <div class="form-group">
+                <label>Name</label>
+                <input type="name" class="form-control" name="name">
             </div>
-        </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" class="form-control" name="number">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
-</div>
-@endsection
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($agents as $agent)
+              <tr>
+                <td>{{$agent->name}}</td>
+                <td>{{$agent->email}}</td>
+                <td>{{$agent->number}}</td>
+            </tr>
+          @endforeach
+        </tbody>
+    </table>
+</body>
+
+</html> 
