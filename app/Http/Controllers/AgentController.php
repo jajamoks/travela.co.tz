@@ -10,7 +10,7 @@ class AgentController extends Controller
     public function index()
     {
       $agents = Agent::all();
-      return view('agents')->with('agents', $agents);
+      return view('agents.index')->with('agents', $agents);
     }
 
     public function create(Request $request)

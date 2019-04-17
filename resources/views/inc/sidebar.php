@@ -32,7 +32,7 @@
                                       <i class="fas fa-plus"></i>Add new</a>
                               </li>
                               <li>
-                                  <a href="#">
+                                  <a href="admin/agents">
                                       <i class="far fa-check-square"></i>View All</a>
                               </li>
                           </ul>

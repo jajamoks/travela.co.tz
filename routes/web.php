@@ -1,15 +1,19 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
+Auth::routes();
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
 
-Route::get('/agents', 'AgentController@index');
-
-Route::post('/agents/create', 'AgentController@create');
-
-Route::get('/home', 'AgentController@create');
+// Agents Routes
+Route::prefix('admin')->group(function () {
+    Route::resource('/agents', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
+    Route::resource('/busses', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
+    Route::resource('/routes', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
+});
