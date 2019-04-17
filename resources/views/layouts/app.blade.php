@@ -36,11 +36,15 @@
 
 <body class="animsition">
     <div class="page-wrapper app" id="app">
-        @include('inc.header_mobile')
-        @include('inc.sidebar')
+      @guest
+        @else
+          @include('inc.header_mobile')
+          @include('inc.sidebar')
+      @endguest
+
 
         <div class="page-container">
-            @include('inc.navbar')
+            @include('inc.header_desktop')
             @yield('content')
         </div>
     </div>

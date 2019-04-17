@@ -21,7 +21,7 @@
                                     <i class="zmdi zmdi-account-o"></i>
                                 </div>
                                 <div class="text">
-                                    <h2>36</h2>
+                                    <h2>{{$total}}</h2>
                                     <span>Total Agents</span>
                                 </div>
                             </div>
