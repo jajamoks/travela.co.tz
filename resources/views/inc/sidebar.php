@@ -1,6 +1,6 @@
 <aside class="menu-sidebar d-none d-lg-block">
     <div class="logo">
-        <a href="#">
+        <a href="/">
           <h4>Bus Ticketing System</h4>
             <!-- <img src="images/icon/logo.png" alt="{{ config('app.name')}}" /> -->
         </a>
