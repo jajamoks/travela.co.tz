@@ -4,14 +4,19 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Auth::routes();
+
+// Testing Route
+// Route::get('/wel', 'DashboardController@index');
+
+// Landing Page
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-
+// Dashboard
 Route::get('/dashboard', 'DashboardController@index');
 
-// Agents Routes
+// Agents
 Route::prefix('admin')->group(function () {
     Route::resource('/agents', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
     Route::resource('/busses', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
