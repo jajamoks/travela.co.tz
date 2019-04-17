@@ -5,10 +5,10 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="author" content="ODIT - 2017/2019">
-    <title>{{ config('app.name', 'Laravel') }}</title>
-    <meta name="description" content="au theme template">
+    <title>{{ config('app.name') }}</title>
+    <meta name="description" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="keywords" content="Bus Ticketing System">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Fontfaces CSS-->
@@ -35,11 +35,15 @@
 </head>
 
 <body class="animsition">
+    <div class="page-wrapper app" id="app">
+        @include('inc.header_mobile')
+        @include('inc.sidebar')
 
-    <div class="page-wrapper">
-        @yield('content')
+        <div class="page-container">
+            @include('inc.navbar')
+            @yield('content')
+        </div>
     </div>
-
 
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>

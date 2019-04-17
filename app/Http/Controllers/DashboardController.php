@@ -13,8 +13,7 @@ class dashboardController extends Controller
 
     public function index(Request $request)
     {
-      $user = User::all();
+      $user = User::findOrFail($request->user()->id);
       return view('dashboard')->with('user', $user);
-
     }
 }

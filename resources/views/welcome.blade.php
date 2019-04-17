@@ -8,7 +8,7 @@
         <meta name="author" content="">
 
         <link rel="shortcut icon" type="image/png" href="http://demo.truebus.co.in/admin/assets/uploads/favicons/1495099426_bus1.jpg" />
-        <title>Online Bus Ticket Booking</title>
+        <title>{{ config('app.name') }}</title>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
         <!-- custom CSS -->
         <link href="http://demo.truebus.co.in/assets/css/bootstrap.css" rel="stylesheet">
@@ -94,7 +94,7 @@
                 <div class="col-md-6">
                     <form id="myForm" method="post" data-parsley-validate="" autocomplete="off">
                         <section id="Search" class="LB XXCN  P20">
-                            <h1 class="bookTic XCN TextSemiBold">Online Bus Tickets Booking</h1>
+                            <h1 class="bookTic XCN TextSemiBold">{{ config('app.name') }}</h1>
                             <div class="searchRow clearfix">
                                 <div class="LB">
                                     <label class="inputLabel">From</label>

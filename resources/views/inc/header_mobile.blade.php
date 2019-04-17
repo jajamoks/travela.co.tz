@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="header-mobile-inner">
                 <a class="logo" href="{{ url('/') }}">
-                  BTS
+                    BTS
                     <!-- <img src="images/icon/logo.png" alt="CoolAdmin" /> -->
                 </a>
                 <button class="hamburger hamburger--slider" type="button">
