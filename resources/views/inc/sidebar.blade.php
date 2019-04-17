@@ -14,10 +14,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-users"></i>Customers</a>
+                    <a href="admin/customer"><i class="fas fa-users"></i>Customers</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-file-alt"></i>Tickets</a>
+                    <a href="admin/tickets"><i class="fas fa-file-alt"></i>Tickets</a>
                 </li>
                 <li class="has-sub">
                     <a class="js-arrow" href="#">
@@ -50,7 +50,7 @@
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="admin/busses">
                                 <i class="far fa-check-square"></i>View All</a>
                         </li>
                     </ul>
@@ -68,7 +68,7 @@
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="admin/routes">
                                 <i class="far fa-check-square"></i>View All</a>
                         </li>
                     </ul>

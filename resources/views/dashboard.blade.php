@@ -21,7 +21,7 @@
                                     <i class="zmdi zmdi-account-o"></i>
                                 </div>
                                 <div class="text">
-                                    <h2>{{$total_agents}}</h2>
+                                    <h2>{{number_format($total_agents)}}</h2>
                                     <span>Total Agents</span>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@
                                     <i class="zmdi zmdi-bus"></i>
                                 </div>
                                 <div class="text">
-                                    <h2>{{$total_busses}}</h2>
+                                    <h2>{{number_format($total_busses)}}</h2>
                                     <span>Total Busses</span>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                                     <i class="zmdi zmdi-calendar-note"></i>
                                 </div>
                                 <div class="text">
-                                    <h2>{{$total_tickets}}</h2>
+                                    <h2>{{number_format($total_tickets)}}</h2>
                                     <span>Ticket Booked</span>
                                 </div>
                             </div>
@@ -69,8 +69,8 @@
                                     <i class="zmdi zmdi-money"></i>
                                 </div>
                                 <div class="text">
-                                    <h2> 000,000</h2>
-                                    <span>Total Earnings</span>
+                                    <h2>{{number_format($total_earnings)}}</h2>
+                                    <span>Total Earning</span>
                                 </div>
                             </div>
                         </div>

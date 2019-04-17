@@ -19,6 +19,7 @@ Route::get('/dashboard', 'DashboardController@index');
 // Agents
 Route::prefix('admin')->group(function () {
     Route::resource('/agents', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
-    Route::resource('/busses', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
-    Route::resource('/routes', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
+    Route::resource('/busses', 'BusController')->only(['index', 'store', 'update', 'destroy']);
+    Route::resource('/routes', 'RouteController')->only(['index', 'store', 'update', 'destroy']);
+    Route::resource('/tickets', 'TicketController')->only(['index', 'store', 'update', 'destroy']);
 });
