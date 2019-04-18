@@ -18,7 +18,7 @@ class dashboardController extends Controller
     {
       $user = User::findOrFail($request->user()->id);
 
-      $total_earnings = Ticket::All()->sum('fare');
+      $total_earnings = Ticket::All()->sum('amount');
       $total_tickets = Ticket::All()->count();
       $total_agents = Agent::All()->count();
       $total_busses = Bus::All()->count();

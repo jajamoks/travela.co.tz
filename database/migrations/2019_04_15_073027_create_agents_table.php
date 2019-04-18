@@ -13,7 +13,7 @@ class CreateAgentsTable extends Migration
             $table->string('name');
             $table->string('email')->nullable();
             $table->integer('number');
-            $table->string('location')->nullable();
+            $table->string('city')->nullable();
             $table->timestamps();
         });
     }
