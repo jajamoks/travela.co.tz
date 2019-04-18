@@ -94,14 +94,16 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>James Emanuel</td>
-                                    <td>T234 ADF</td>
-                                    <td>Bagamoyo</td>
-                                    <td>23 Jully 2019</td>
-                                    <td class="text-right">Tsh 34,000</td>
-                                </tr>
+                                @foreach ($tickets as $ticket)
+                                  <tr>
+                                      <td>{{$ticket->id}}</td>
+                                      <td>J{{$ticket->customer_name}}</td>
+                                      <td>{{$ticket->bus_id}}</td>
+                                      <td>{{$ticket->from}} - {{$ticket->to}}</td>
+                                      <td>{{$ticket->booked_date->format('d/m/Y')}}</td>
+                                      <td class="text-right">{{$ticket->amount}}</td>
+                                  </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
