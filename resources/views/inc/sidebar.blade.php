@@ -28,11 +28,11 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="#">
+                            <a href="/admin/agents/create">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
-                            <a href="admin/agents">
+                            <a href="/admin/agents">
                                 <i class="far fa-check-square"></i>View All</a>
                         </li>
                     </ul>
@@ -46,11 +46,11 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="#">
+                            <a href="/admin/busses/add_bus">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
-                            <a href="admin/busses">
+                            <a href="/admin/busses">
                                 <i class="far fa-check-square"></i>View All</a>
                         </li>
                     </ul>
