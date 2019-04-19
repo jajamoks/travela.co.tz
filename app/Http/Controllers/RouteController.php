@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bus;
 use App\Route;
 use Illuminate\Http\Request;
 
@@ -10,17 +11,25 @@ class RouteController extends Controller
 
     public function index()
     {
-        //
+      $bus = Bus::All();
+      $route = Route::All();
+      return view('routes.index')
+      ->with('bus',$bus)
+      ->with('route',$route);
     }
 
     public function create()
     {
-        //
+      $bus = Bus::All();
+      return view('routes.add_route')->with('bus',$bus);
     }
 
     public function store(Request $request)
     {
-        //
+      $route = Route::create($request->only('bus_name', 'price','from_place','to_place','arrival_timerime','departure_time'));
+      $route->save();
+
+      return redirect('admin/routes');
     }
 
     public function show(Route $route)

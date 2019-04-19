@@ -11,9 +11,10 @@
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
+                                    <th>Id</th>
                                     <th>Bus Name</th>
-                                    <th>Bus Registration Number</th>
-                                    <th>Bus Type</th>
+                                    <th>Registration Number</th>
+                                    <th>Type</th>
                                     <th>Maximum Seats</th>
                                     <th>Actions</th>
                                 </tr>
@@ -21,10 +22,11 @@
                             <tbody>
                                 @foreach ($bus as $bus)
                                 <tr>
-                                    <td>{{$bus->bus_name}}</td>
-                                    <td>{{$bus->bus_registration_number}}</td>
-                                    <td>{{$bus->bus_type}}</td>
-                                    <td>{{$bus->maximum_seats}}</td>
+                                    <td>{{$bus->id}}</td>
+                                    <td>{{$bus->name}}</td>
+                                    <td>{{$bus->registration_number}}</td>
+                                    <td>{{$bus->type}}</td>
+                                    <td>{{$bus->seats}}</td>
                                     <td>Action</td>
                                 </tr>
                                 @endforeach

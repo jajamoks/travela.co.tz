@@ -12,23 +12,23 @@
                           {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="bus-namet" class="control-label mb-1">Bus Name</label>
-                                    <input id="bus-name" name="bus_name" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                                    <label for="name" class="control-label mb-1">Bus Name</label>
+                                    <input id="name" name="name" type="text" class="form-control" aria-required="true" aria-invalid="false">
                                 </div>
                                 <div class="col-md-6 form-group has-success">
-                                    <label for="bus_registration_number" class="control-label mb-1">Bus Registration Number</label>
-                                    <input id="bus_registration_number" name="bus_registration_number" type="text" class="form-control">
-                                    <span class="help-block field-validation-valid" data-valmsg-for="bus_registration_number" data-valmsg-replace="true"></span>
+                                    <label for="registration_number" class="control-label mb-1">Bus Registration Number</label>
+                                    <input id="registration_number" name="registration_number" type="text" class="form-control">
+                                    <span class="help-block field-validation-valid" data-valmsg-for="registration_number" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="bus_type" class="control-label mb-1">Bus Type</label>
-                                    <input id="bus_type" name="bus_type" type="text" class="form-control">
-                                    <span class="help-block" data-valmsg-for="bus_type" data-valmsg-replace="true"></span>
+                                    <label for="type" class="control-label mb-1">Bus Type</label>
+                                    <input id="type" name="type" type="text" class="form-control">
+                                    <span class="help-block" data-valmsg-for="type" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="maximum_seats" class="control-label mb-1">Maximum Seats</label>
-                                    <input id="maximum_seats" name="maximum_seats" type="number" class="form-control cc-exp">
-                                    <span class="help-block" data-valmsg-for="maximum_seats" data-valmsg-replace="true"></span>
+                                    <label for="seats" class="control-label mb-1">Seats</label>
+                                    <input id="seats" name="seats" type="number" class="form-control cc-exp">
+                                    <span class="help-block" data-valmsg-for="seats" data-valmsg-replace="true"></span>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-md">Submit</button>

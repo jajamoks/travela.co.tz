@@ -11,7 +11,7 @@ class BusController extends Controller
     public function index()
     {
       $bus = Bus::All();
-        return view('busses.index')->with('bus',$bus);
+      return view('busses.index')->with('bus',$bus);
     }
 
     public function create()
@@ -21,7 +21,7 @@ class BusController extends Controller
 
     public function store(Request $request)
     {
-      $bus = Bus::create($request->only('bus_name', 'bus_type','bus_registration_number','maximum_seats'));
+      $bus = Bus::create($request->only('name', 'type','registration_number','seats'));
       $bus->save();
 
       return redirect('admin/busses');

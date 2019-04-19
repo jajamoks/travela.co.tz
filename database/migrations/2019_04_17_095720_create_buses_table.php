@@ -10,10 +10,10 @@ class CreateBusesTable extends Migration
     {
         Schema::create('buses', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string("bus_name");
-            $table->string("bus_registration_number");
-            $table->string("bus_type");
-            $table->integer("maximum_seats");
+            $table->string("name");
+            $table->string("registration_number");
+            $table->string("type");
+            $table->integer("seats");
             $table->timestamps();
         });
     }

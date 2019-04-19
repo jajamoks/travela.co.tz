@@ -64,11 +64,11 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="#">
+                            <a href="/admin/routes/add_route">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
-                            <a href="admin/routes">
+                            <a href="/admin/routes">
                                 <i class="far fa-check-square"></i>View All</a>
                         </li>
                     </ul>
