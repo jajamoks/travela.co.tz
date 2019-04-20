@@ -15,7 +15,7 @@
                                     <th>Bus Name</th>
                                     <th>Registration Number</th>
                                     <th>Type</th>
-                                    <th>Maximum Seats</th>
+                                    <th>Seats</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>

@@ -8,27 +8,25 @@
                 <div class="card">
                     <div class="card-header">Add Agent</div>
                     <div class="card-body">
-                        <form action="/admin/busses" method="post" novalidate="novalidate">
-                          {{ csrf_field() }}
+                        <form action="/admin/agents" method="post" novalidate="novalidate">
+                            {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="name" class="control-label mb-1">Bus Name</label>
+                                    <label for="name" class="control-label mb-1">Agent Name</label>
                                     <input id="name" name="name" type="text" class="form-control" aria-required="true" aria-invalid="false">
                                 </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="number" class="control-label mb-1">Agent Phone Number</label>
+                                    <input id="number" name="number" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                                </div>
                                 <div class="col-md-6 form-group has-success">
-                                    <label for="registration_number" class="control-label mb-1">Bus Registration Number</label>
-                                    <input id="registration_number" name="registration_number" type="text" class="form-control">
-                                    <span class="help-block field-validation-valid" data-valmsg-for="registration_number" data-valmsg-replace="true"></span>
+                                    <label for="email" class="control-label mb-1">Agent Email</label>
+                                    <input id="email" name="email" type="text" class="form-control">
+                                    <span class="help-block field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="type" class="control-label mb-1">Bus Type</label>
-                                    <input id="type" name="type" type="text" class="form-control">
-                                    <span class="help-block" data-valmsg-for="type" data-valmsg-replace="true"></span>
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label for="seats" class="control-label mb-1">Seats</label>
-                                    <input id="seats" name="seats" type="number" class="form-control cc-exp">
-                                    <span class="help-block" data-valmsg-for="seats" data-valmsg-replace="true"></span>
+                                    <label for="city" class="control-label mb-1">Agent City</label>
+                                    <input id="city" name="city" type="text" class="form-control" aria-required="true" aria-invalid="false">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-md">Submit</button>

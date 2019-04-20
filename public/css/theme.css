@@ -1567,8 +1567,8 @@ section {
 }
 
 .menu-sidebar {
-    /* width: 300px; */
-    width: 270px;
+    width: 300px;
+    /* width: 270px; */
     position: fixed;
     left: 0;
     top: 0;

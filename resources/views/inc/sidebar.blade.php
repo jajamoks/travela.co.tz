@@ -14,10 +14,10 @@
                     </a>
                 </li>
                 <li>
-                    <a href="admin/customer"><i class="fas fa-users"></i>Customers</a>
+                    <a href="/admin/customer"><i class="fas fa-users"></i>Customers</a>
                 </li>
                 <li>
-                    <a href="admin/tickets"><i class="fas fa-file-alt"></i>Tickets</a>
+                    <a href="/admin/tickets"><i class="fas fa-file-alt"></i>Tickets</a>
                 </li>
                 <li class="has-sub">
                     <a class="js-arrow" href="#">
