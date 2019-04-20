@@ -6,25 +6,16 @@ class BussesTableSeeder extends Seeder
 {
     public function run()
     {
-      $bus_1 = new \App\Bus();
-      $bus_1->registration_number = 'T 245 BAS';
-      $bus_1->name = 'HIGHER';
-      $bus_1->type = 'Luxury';
-      $bus_1->seats = '61';
-      $bus_1->save();
+      $faker = Faker\Factory::create();
 
-      $bus_2 = new \App\Bus();
-      $bus_2->registration_number = 'T 623 AVG';
-      $bus_2->name = 'MORCOPOLO';
-      $bus_2->type = 'Luxury';
-      $bus_2->seats = '59';
-      $bus_2->save();
-
-      $bus_3 = new \App\Bus();
-      $bus_3->registration_number = 'T 354 DKG';
-      $bus_3->name = 'YOUTONG';
-      $bus_3->type = 'Semi Luxury';
-      $bus_3->seats = '60';
-      $bus_3->save();
+       for ($i = 0; $i < 23; $i++) {
+           $bus = App\Bus::create([
+             'seats' => $faker->randomElement(['61', '60', '62']),
+             'name' => $faker->randomElement(['YOUTONG', 'HIGHER', 'MORCOPOLO']),
+             'type' => $faker->randomElement(['Luxury', 'Semi-Luxury', 'Normal-Class']),
+             'registration_number' => 'T ' .$faker->numberBetween($min = 100, $max = 999). ' ' .Str::random(3),
+           ]);
+           $bus->save();
+       }
     }
 }

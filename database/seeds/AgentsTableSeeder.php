@@ -13,9 +13,9 @@ class AgentsTableSeeder extends Seeder
        for ($i = 0; $i < 7; $i++) {
            $agent = App\Agent::create([
                'name' => $faker->name,
-               'city' => $faker->city,
                'number' => $faker->phoneNumber,
                'email' => $faker->userName .'@bts.me',
+               'city' => $faker->randomElement(['Arusha', 'Dar es salaam']),
            ]);
            $agent->save();
        }

@@ -11,11 +11,11 @@ class TicketsTableSeeder extends Seeder
        for ($i = 0; $i < 356; $i++) {
            $ticket = App\Ticket::create([
                'bus_id' => '1',
-               'to_place' => $faker->city,
                'from_place' => $faker->city,
                'booked_date' => $faker->date,
                'customer_name' => $faker->name,
-               'amount' => $faker->randomElement(['34000', '37000']),
+               'amount' => $faker->randomElement(['34000', '36000' , '37000']),
+               'to_place' => $faker->randomElement(['Arusha', 'Dar es salaam']),
            ]);
            $ticket->save();
        }

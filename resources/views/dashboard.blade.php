@@ -69,7 +69,7 @@
                                     <i class="zmdi zmdi-money"></i>
                                 </div>
                                 <div class="text">
-                                    <h2>{{number_format($total_earnings)}}</h2>
+                                    <h3>{{number_format($total_earnings)}}</h3>
                                     <span>Total Earning</span>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                                     <td>J{{$ticket->customer_name}}</td>
                                     <td>{{$ticket->bus_id}}</td>
                                     <td>{{$ticket->from}} - {{$ticket->to}}</td>
-                                    <td>{{$ticket->booked_date->format('d/m/Y')}}</td>
+                                    <td>{{$ticket->booked_date->format('d M Y')}}</td>
                                     <td class="text-right">{{$ticket->amount}}</td>
                                 </tr>
                                 @endforeach
