@@ -1567,7 +1567,8 @@ section {
 }
 
 .menu-sidebar {
-    width: 300px;
+    /* width: 300px; */
+    width: 270px;
     position: fixed;
     left: 0;
     top: 0;
@@ -2244,6 +2245,7 @@ section {
     color: #555;
     display: block;
     padding: 18px 35px;
+    /* padding: 14px 25px; */
     border-bottom: 1px solid #f2f2f2;
 }
 

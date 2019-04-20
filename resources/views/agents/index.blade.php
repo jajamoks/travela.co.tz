@@ -1,50 +1,41 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+@extends('layouts.app')
 
-<head>
-    <meta charset="utf-8">
-    <title>Agents</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-
-<body>
-    <div class="col-md-4">
-        <form action="/agents/create" method="post">
-            @csrf
-            <div class="form-group">
-                <label>Name</label>
-                <input type="name" class="form-control" name="name">
+@section('content')
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="title-1 m-b-25">All Agents</h2>
+                    <div class="table-responsive table--no-card m-b-40">
+                        <table class="table table-borderless table-striped table-earning">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Number</th>
+                                    {{-- <th>Email</th> --}}
+                                    <th>City</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($agent as $agent)
+                                <tr>
+                                    <td>{{$agent->id}}</td>
+                                    <td>{{$agent->name}}</td>
+                                    <td>{{$agent->number}}</td>
+                                    {{-- <td>{{$agent->email}}</td> --}}
+                                    <td>{{$agent->city}}</td>
+                                    <td>Action</td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="text" class="form-control" name="email">
-            </div>
-            <div class="form-group">
-                <label>Phone Number</label>
-                <input type="text" class="form-control" name="number">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
     </div>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Number</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($agents as $agent)
-              <tr>
-                <td>{{$agent->name}}</td>
-                <td>{{$agent->email}}</td>
-                <td>{{$agent->number}}</td>
-            </tr>
-          @endforeach
-        </tbody>
-    </table>
-</body>
-
-</html> 
+</div>
+@endsection

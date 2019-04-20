@@ -27,6 +27,7 @@ Route::prefix('admin')->group(function () {
     Route::resource('/routes', 'RouteController')->only(['index', 'update', 'destroy']);
 
     // Agents
+    Route::get('/agents/add_agent', 'AgentsController@create');
     Route::resource('/agents', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
 
     // Tickets
