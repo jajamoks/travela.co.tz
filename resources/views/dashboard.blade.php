@@ -81,6 +81,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="title-1 m-b-25">Recently Ticket Booked</h2>
+                    @if(count($tickets) > 0 )
                     <div class="table-responsive table--no-card m-b-40">
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
@@ -95,18 +96,21 @@
                             </thead>
                             <tbody>
                                 @foreach ($tickets as $ticket)
-                                  <tr>
-                                      <td>{{$ticket->id}}</td>
-                                      <td>J{{$ticket->customer_name}}</td>
-                                      <td>{{$ticket->bus_id}}</td>
-                                      <td>{{$ticket->from}} - {{$ticket->to}}</td>
-                                      <td>{{$ticket->booked_date->format('d/m/Y')}}</td>
-                                      <td class="text-right">{{$ticket->amount}}</td>
-                                  </tr>
+                                <tr>
+                                    <td>{{$ticket->id}}</td>
+                                    <td>J{{$ticket->customer_name}}</td>
+                                    <td>{{$ticket->bus_id}}</td>
+                                    <td>{{$ticket->from}} - {{$ticket->to}}</td>
+                                    <td>{{$ticket->booked_date->format('d/m/Y')}}</td>
+                                    <td class="text-right">{{$ticket->amount}}</td>
+                                </tr>
                                 @endforeach
                             </tbody>
                         </table>
                     </div>
+                    @else
+                    <p>No ticket booked yet.</p>
+                    @endif
                 </div>
             </div>
         </div>

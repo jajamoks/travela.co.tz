@@ -12,7 +12,7 @@ class CreateAgentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->nullable();
-            $table->integer('number');
+            $table->string('number');
             $table->string('city')->nullable();
             $table->timestamps();
         });

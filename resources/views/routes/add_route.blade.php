@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header">Add Route Details</div>
                     <div class="card-body">
-                        <form action="/admin/routes" method="post" novalidate="novalidate">
+                        <form action="/admin/route" method="post" novalidate="novalidate">
                             {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-6 form-group">
@@ -37,12 +37,12 @@
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="departure_time" class="control-label mb-1">Departure Time</label>
-                                    <input id="departure_time" name="bus_type" type="date"  data-date-format="DD MMMM YYYY" class="form-control">
+                                    <input id="departure_time" name="bus_type" type="time" data-date-format="DD MMMM YYYY" class="form-control">
                                     <span class="help-block" data-valmsg-for="departure_time" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="arrival_time" class="control-label mb-1">Arrival Time</label>
-                                    <input id="arrival_time" name="arrival_time" type="date"  data-date-format="DD MMMM YYYY" class="form-control">
+                                    <input id="arrival_time" name="arrival_time" type="time"  data-date-format="DD MMMM YYYY" class="form-control">
                                     <span class="help-block" data-valmsg-for="arrival_time" data-valmsg-replace="true"></span>
                                 </div>
                             </div>

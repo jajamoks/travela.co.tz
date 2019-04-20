@@ -24,13 +24,13 @@ class RouteController extends Controller
       return view('routes.add_route')->with('bus',$bus);
     }
 
-    public function store(Request $request)
-    {
-      $route = Route::create($request->only('bus_name', 'price','from_place','to_place','arrival_timerime','departure_time'));
-      $route->save();
-
-      return redirect('admin/routes');
-    }
+    // public function store(Request $request)
+    // {
+    //   $route = Route::create($request->only('bus_name', 'price','from_place','to_place','arrival_timerime','departure_time'));
+    //   $route->save();
+    //
+    //   return redirect('admin/routes');
+    // }
 
     public function show(Route $route)
     {
