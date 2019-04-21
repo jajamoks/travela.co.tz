@@ -11,14 +11,13 @@ class CreateTicketsTable extends Migration
         Schema::create('tickets', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('bus_id');
-            $table->string('from_place');
-            $table->string('to_place');
-            $table->string('customer_name');
-            $table->string('additinal_info');
-            $table->timestamp('booked_date');
-            $table->string('issued_by');
-            $table->timestamp('date_issued');
             $table->integer('amount');
+            $table->string('toPlace');
+            $table->string('issuedBy');
+            $table->string('fromPlace');
+            $table->string('customerName');
+            $table->string('additinalInfo');
+            $table->timestamp('bookedDate');
             $table->timestamps();
         });
     }

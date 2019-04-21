@@ -28,7 +28,7 @@ class RouteController extends Controller
     {
       $route = Route::create($request->only(
         'bus_name', 'arrival_time',
-        'departure_time', 'from_place', 'to_place'
+        'departure_time', 'fromPlace', 'toPlace'
       ));
       $route->save();
 

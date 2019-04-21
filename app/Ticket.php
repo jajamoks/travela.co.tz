@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ticket extends Model
 {
-  protected $dates = ['booked_date'];
+  protected $dates = ['bookedDate'];
 
 }

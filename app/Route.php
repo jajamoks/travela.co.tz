@@ -8,6 +8,6 @@ class Route extends Model
 {
     protected $fillable = [
       'bus_name', 'price', 'arrival_time',
-      'departure_time', 'from_place', 'to_place',
+      'departure_time', 'fromPlace', 'toPlace',
     ];
 }

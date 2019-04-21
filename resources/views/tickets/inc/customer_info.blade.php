@@ -24,10 +24,10 @@
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="booked_date" class=" form-control-label">Date Of Travel</label>
+                        <label for="bookedDate" class=" form-control-label">Date Of Travel</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="date" id="booked_date" name="booked_date" class="form-control">
+                        <input type="date" id="bookedDate" name="bookedDate" class="form-control">
                     </div>
                 </div>
                 <div class="row form-group">
@@ -38,17 +38,17 @@
                         <select name="select" id="select" class="form-control">
                             <option value="0">Please select</option>
                             @foreach ($routes as $route)
-                            <option value="{{$route->id}}">{{$route->from_place}}</option>
+                            <option value="{{$route->id}}">{{$route->fromPlace}}</option>
                             @endforeach
                         </select>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="additinal_info" class=" form-control-label">Additinal Info</label>
+                        <label for="additinalInfo" class=" form-control-label">Additinal Info</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <textarea name="additinal_info" id="additinal_info" rows="4" class="form-control"></textarea>
+                        <textarea name="additinalInfo" id="additinalInfo" rows="4" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -61,13 +61,13 @@
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="date_issued" class=" form-control-label">Issued On</label>
+                        <label for="dateIssued" class=" form-control-label">Issued On</label>
                     </div>
                     @php
                     $now = date("d M Y");
                     @endphp
                     <div class="col-12 col-md-9">
-                        <input type="text" id="date_issued" name="date_issued" placeholder="{{$now}}" disabled="" class="form-control">
+                        <input type="text" id="dateIssued" name="dateIssued" placeholder="{{$now}}" disabled="" class="form-control">
                     </div>
                 </div>
             </form>

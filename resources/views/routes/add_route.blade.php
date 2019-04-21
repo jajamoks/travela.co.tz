@@ -21,14 +21,14 @@
                                     <input>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="from_place" class="control-label mb-1">From Place</label>
-                                    <input id="from_place" name="from_place" type="text" class="form-control">
-                                    <span class="help-block" data-valmsg-for="from_place" data-valmsg-replace="true"></span>
+                                    <label for="fromPlace" class="control-label mb-1">From Place</label>
+                                    <input id="fromPlace" name="fromPlace" type="text" class="form-control">
+                                    <span class="help-block" data-valmsg-for="fromPlace" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="to_place" class="control-label mb-1">To Place</label>
-                                    <input id="to_place" name="to_place" type="text" class="form-control cc-exp">
-                                    <span class="help-block" data-valmsg-for="to_place" data-valmsg-replace="true"></span>
+                                    <label for="toPlace" class="control-label mb-1">To Place</label>
+                                    <input id="toPlace" name="toPlace" type="text" class="form-control cc-exp">
+                                    <span class="help-block" data-valmsg-for="toPlace" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="departure_time" class="control-label mb-1">Departure Time</label>

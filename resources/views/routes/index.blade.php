@@ -23,9 +23,9 @@
                                 @foreach ($route as $route)
                                 <tr>
                                     <td>{{$route->bus_name}}</td>
-                                    <td>{{$route->from_place}}</td>
+                                    <td>{{$route->fromPlace}}</td>
                                     <td>{{$route->departure_time}}</td>
-                                    <td>{{$route->to_place}}</td>
+                                    <td>{{$route->toPlace}}</td>
                                     <td>{{$route->arrival_time}}</td>
                                     <td>Action</td>
                                 </tr>
