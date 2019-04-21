@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 // Testing Route
-// Route::get('/wel', 'DashboardController@index');
+Route::get('/test');
 
 // Landing Page
 Route::get('/', function () {
@@ -31,5 +31,6 @@ Route::prefix('admin')->group(function () {
     Route::resource('/agents', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
 
     // Tickets
+    Route::get('/tickets/new_ticket', 'TicketController@create');
     Route::resource('/tickets', 'TicketController')->only(['index', 'store', 'update', 'destroy']);
 });

@@ -16,8 +16,24 @@
                 <li>
                     <a href="/admin/customer"><i class="fas fa-users"></i>Customers</a>
                 </li>
-                <li>
-                    <a href="/admin/tickets"><i class="fas fa-file-alt"></i>Tickets</a>
+                <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="fas fa-file-alt"></i>Tickets
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="/admin/tickets/new_ticket">
+                                <i class="fas fa-plus"></i>Add new</a>
+                        </li>
+                        <li>
+                            <a href="/admin/tickets">
+                              <i class="fas fa-check-square"></i>All Tickets
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="has-sub">
                     <a class="js-arrow" href="#">

@@ -15,7 +15,7 @@ class TicketController extends Controller
 
     public function create()
     {
-        //
+        return view('tickets.new_ticket');
     }
 
     public function store(Request $request)
