@@ -15,7 +15,7 @@
                                     <th>Id</th>
                                     <th>Customer</th>
                                     <th>Bus</th>
-                                    <th>To</th>
+                                    <th>To Place</th>
                                     <th>Booked Date</th>
                                     <th class="text-right">Price</th>
                                 </tr>

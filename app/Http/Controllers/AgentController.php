@@ -9,23 +9,23 @@ class AgentController extends Controller
 {
     public function index()
     {
-      $agent = Agent::all();
-      return view('agents.index')->with('agent', $agent);
+      $agents = Agent::all();
+      return view('agents.index')->with('agents', $agents);
     }
 
     public function create(Request $request)
     {
-      $agent = Agent::create($request->only(
-        'name', 'email','number'
-      ));
-      $agent->save();
-
-      return view('agents');
+      return view('agents.add_agent');
 
     }
     public function store(Request $request)
     {
-        //
+      $agents = Agent::all();
+      $agent = Agent::create($request->only(
+        'name', 'email','number','city'
+      ));
+      $agent->save();
+      return view('agents.index')->with('agents', $agents);
     }
 
     public function show(Agent $agent)

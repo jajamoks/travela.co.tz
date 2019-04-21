@@ -26,7 +26,12 @@
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="city" class="control-label mb-1">Agent City</label>
-                                    <input id="city" name="city" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                                    <select id="city" name="city" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                                        <option value="non-selected">Select City</option>
+                                        <option value="Moshi">Moshi</option>
+                                        <option value="Arusha">Arusha</option>
+                                        <option value="Dar es salaam">Dar es salaam</option>
+                                    </select>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-md">Submit</button>

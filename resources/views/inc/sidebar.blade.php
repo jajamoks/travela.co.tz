@@ -28,7 +28,7 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="/admin/agents/create">
+                            <a href="/admin/agents/add_agent">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>

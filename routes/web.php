@@ -24,10 +24,10 @@ Route::prefix('admin')->group(function () {
 
     // Route
     Route::get('/routes/add_route', 'RouteController@create');
-    Route::resource('/routes', 'RouteController')->only(['index', 'update', 'destroy']);
+    Route::resource('/routes', 'RouteController')->only(['index', 'update', 'store', 'destroy']);
 
     // Agents
-    Route::get('/agents/add_agent', 'AgentsController@create');
+    Route::get('/agents/add_agent', 'AgentController@create');
     Route::resource('/agents', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
 
     // Tickets

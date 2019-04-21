@@ -20,7 +20,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($agent as $agent)
+                                @foreach ($agents as $agent)
                                 <tr>
                                     <td>{{$agent->id}}</td>
                                     <td>{{$agent->name}}</td>

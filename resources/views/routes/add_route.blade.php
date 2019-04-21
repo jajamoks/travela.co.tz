@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-header">Add Route Details</div>
                     <div class="card-body">
-                        <form action="/admin/route" method="post" novalidate="novalidate">
+                        <form action="/admin/routes" method="post" novalidate="novalidate">
                             {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-6 form-group">

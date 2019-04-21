@@ -15,7 +15,9 @@ class AgentsTableSeeder extends Seeder
                'name' => $faker->name,
                'number' => $faker->phoneNumber,
                'email' => $faker->userName .'@bts.me',
-               'city' => $faker->randomElement(['Arusha', 'Dar es salaam']),
+               'city' => $faker->randomElement([
+                 'Arusha', 'Dar es salaam', 'Moshi'
+               ]),
            ]);
            $agent->save();
        }
