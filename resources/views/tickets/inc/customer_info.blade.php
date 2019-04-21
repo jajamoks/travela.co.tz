@@ -8,18 +8,18 @@
                 {{ csrf_field() }}
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="passenger_name" class=" form-control-label">Passenger Name</label>
+                        <label for="name" class=" form-control-label">Passenger Name</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="passenger_name" name="passenger_name" class="form-control">
+                        <input type="text" id="name" name="name" class="form-control">
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="passenger_number" class=" form-control-label">Passenger Number</label>
+                        <label for="number" class=" form-control-label">Passenger Number</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="number" id="passenger_number" name="passenger_number" class="form-control">
+                        <input type="number" id="number" name="number" class="form-control">
                     </div>
                 </div>
                 <div class="row form-group">
@@ -73,7 +73,16 @@
                         <input type="text" id="dateIssued" name="dateIssued" placeholder="{{$now}}" disabled="" class="form-control">
                     </div>
                 </div>
-            </form>
+
         </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary btn-md">
+                Submit
+            </button>
+            <button type="reset" class="btn btn-danger btn-md" disabled>
+                Reset
+            </button>
+        </div>
+        </form>
     </div>
 </div>

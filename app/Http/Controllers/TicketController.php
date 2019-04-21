@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Route;
 use App\Ticket;
+use App\Passenger;
 use Illuminate\Http\Request;
 
 class TicketController extends Controller
@@ -22,12 +23,16 @@ class TicketController extends Controller
 
     public function store(Request $request)
     {
-      $passanger = Passanger::create($request->only(
+      $passanger = Passenger::create($request->only(
         'name', 'number'
       ));
       $passanger->save();
 
-      return redirect('admin/busses');
+      // $ticket = Ticket::create($request->only(
+      //   ''
+      // ));
+
+      return redirect('admin/tickets');
     }
 
     public function show(Ticket $ticket)
