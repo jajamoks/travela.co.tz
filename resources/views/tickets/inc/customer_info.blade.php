@@ -38,7 +38,10 @@
                         <select name="select" id="select" class="form-control">
                             <option value="0">Please select</option>
                             @foreach ($routes as $route)
-                            <option value="{{$route->id}}">{{$route->fromPlace}}</option>
+                            <option value="{{$route->id}}">
+                                {{$route->fromPlace}} - {{$route->toPlace}} - T 345 AVG -
+                                {{date("h : i A", strtotime($route->departure_time))}}
+                            </option>
                             @endforeach
                         </select>
                     </div>
