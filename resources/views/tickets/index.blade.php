@@ -12,7 +12,7 @@
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
-                                    <th>Ticket ID</th>
+                                    <th>Id</th>
                                     <th>Customer</th>
                                     <th>Bus</th>
                                     <th>To</th>
@@ -28,7 +28,7 @@
                                     <td>{{$ticket->bus_id}}</td>
                                     <td>{{$ticket->to_place}}</td>
                                     <td>{{$ticket->booked_date->format('d M Y')}}</td>
-                                    <td class="text-right">{{$ticket->amount}}</td>
+                                    <td class="text-right">{{number_format($ticket->amount)}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>

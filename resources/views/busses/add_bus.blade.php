@@ -9,7 +9,7 @@
                     <div class="card-header">Add Bus Details</div>
                     <div class="card-body">
                         <form action="/admin/busses" method="post" novalidate="novalidate">
-                          {{ csrf_field() }}
+                            {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <label for="name" class="control-label mb-1">Bus Name</label>
@@ -22,8 +22,12 @@
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="type" class="control-label mb-1">Bus Type</label>
-                                    <input id="type" name="type" type="text" class="form-control">
-                                    <span class="help-block" data-valmsg-for="type" data-valmsg-replace="true"></span>
+                                    <select id="type" name="type" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                                        <option value="non-selected">Select Type</option>
+                                        <option value="Luxury">Luxury</option>
+                                        <option value="Ordinary">Ordinary</option>
+                                        <option value="Semi-Luxury">Semi-Luxury</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="seats" class="control-label mb-1">Seats</label>

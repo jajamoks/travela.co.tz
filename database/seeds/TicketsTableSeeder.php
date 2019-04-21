@@ -8,7 +8,7 @@ class TicketsTableSeeder extends Seeder
     {
       $faker = Faker\Factory::create();
 
-       for ($i = 0; $i < 356; $i++) {
+       for ($i = 0; $i < 26; $i++) {
            $ticket = App\Ticket::create([
                'bus_id' => '1',
                'from_place' => $faker->city,

@@ -24,9 +24,9 @@
                                 <tr>
                                     <td>{{$bus->id}}</td>
                                     <td>{{$bus->name}}</td>
-                                    <td>{{$bus->registration_number}}</td>
+                                    <td class="text-uppercase">{{$bus->registration_number}}</td>
                                     <td>{{$bus->type}}</td>
-                                    <td>{{$bus->seats}}</td>
+                                    <td class="text-right">{{$bus->seats}}</td>
                                     <td>Action</td>
                                 </tr>
                                 @endforeach
