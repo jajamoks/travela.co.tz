@@ -11,21 +11,22 @@
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
-                                    <th>Bus Name</th>
+                                    <th>Bus Reg No.</th>
                                     <th>Board Point</th>
-                                    {{-- <th>Board Point</th> --}}
-                                    <th>Drop Point</th>
-                                    <th>Fare</th>
+                                    <th>Bus Time</th>
+                                    <th>Arrival Point</th>
+                                    <th>Arrival Time</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($route as $route)
                                 <tr>
-                                    <td>{{$route->name}}</td>
-                                    <td>{{$route->registration_number}}</td>
-                                    <td>{{$route->type}}</td>
-                                    <td>{{$route->maximum_seats}}</td>
+                                    <td>{{$route->bus_name}}</td>
+                                    <td>{{$route->from_place}}</td>
+                                    <td>{{$route->departure_time}}</td>
+                                    <td>{{$route->to_place}}</td>
+                                    <td>{{$route->arrival_time}}</td>
                                     <td>Action</td>
                                 </tr>
                                 @endforeach

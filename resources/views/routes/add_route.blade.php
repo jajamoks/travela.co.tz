@@ -20,14 +20,9 @@
                                     </select>
                                     <input>
                                 </div>
-                                <div class="col-md-6 form-group has-success">
-                                    <label for="price" class="control-label mb-1">Price</label>
-                                    <input id="price" name="price" type="number" class="form-control">
-                                    <span class="help-block field-validation-valid" data-valmsg-for="price" data-valmsg-replace="true"></span>
-                                </div>
                                 <div class="col-md-6 form-group">
                                     <label for="from_place" class="control-label mb-1">From Place</label>
-                                    <input id="from_place" name="bus_type" type="text" class="form-control">
+                                    <input id="from_place" name="from_place" type="text" class="form-control">
                                     <span class="help-block" data-valmsg-for="from_place" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
@@ -37,12 +32,12 @@
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="departure_time" class="control-label mb-1">Departure Time</label>
-                                    <input id="departure_time" name="bus_type" type="time" data-date-format="DD MMMM YYYY" class="form-control">
+                                    <input id="departure_time" name="departure_time" type="time" data-date-format="DD MMMM YYYY" class="form-control">
                                     <span class="help-block" data-valmsg-for="departure_time" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="arrival_time" class="control-label mb-1">Arrival Time</label>
-                                    <input id="arrival_time" name="arrival_time" type="time"  data-date-format="DD MMMM YYYY" class="form-control">
+                                    <input id="arrival_time" name="arrival_time" type="time" class="form-control">
                                     <span class="help-block" data-valmsg-for="arrival_time" data-valmsg-replace="true"></span>
                                 </div>
                             </div>
