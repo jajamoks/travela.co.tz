@@ -18,6 +18,9 @@ Route::get('/dashboard', 'DashboardController@index');
 
 // Prefix Admin
 Route::prefix('admin')->group(function () {
+    // Passengers
+    Route::resource('/passengers', 'PassengerController')->only(['index', 'store', 'update', 'destroy']);
+
     // Bus
     Route::get('/busses/add_bus', 'BusController@create');
     Route::resource('/busses', 'BusController')->only(['index', 'store', 'update', 'destroy']);

@@ -14,7 +14,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/admin/customer"><i class="fas fa-users"></i>Customers</a>
+                    <a href="/admin/passengers"><i class="fas fa-users"></i>Passengers</a>
                 </li>
                 <li class="has-sub">
                     <a class="js-arrow" href="#">

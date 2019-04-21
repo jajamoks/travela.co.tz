@@ -22,7 +22,12 @@ class TicketController extends Controller
 
     public function store(Request $request)
     {
-        //
+      $passanger = Passanger::create($request->only(
+        'name', 'number'
+      ));
+      $passanger->save();
+
+      return redirect('admin/busses');
     }
 
     public function show(Ticket $ticket)
