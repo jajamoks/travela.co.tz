@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Route;
 use App\Ticket;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,8 @@ class TicketController extends Controller
 
     public function create()
     {
-        return view('tickets.new_ticket');
+      $routes = Route::all();
+      return view('tickets.new_ticket')->with('routes', $routes);
     }
 
     public function store(Request $request)
