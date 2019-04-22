@@ -21,7 +21,7 @@ class RouteController extends Controller
     public function create()
     {
       $bus = Bus::All();
-      return view('routes.add_route')->with('bus',$bus);
+      return view('routes.addRoute')->with('bus',$bus);
     }
 
     public function store(Request $request)

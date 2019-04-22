@@ -36,7 +36,7 @@
 
 <body class="animsition">
     <div class="page-wrapper app" id="app">
-        @include('inc.header_desktop')
+        @include('inc.headerDesktop')
         @yield('content')
     </div>
 

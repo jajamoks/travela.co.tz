@@ -40,10 +40,10 @@
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="select" class=" form-control-label">Route</label>
+                        <label for="route_id" class=" form-control-label">Route</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <select name="select" id="select" class="form-control">
+                        <select name="route_id" id="route_id" class="form-control">
                             <option value="0">Please select</option>
                             @foreach ($routes as $route)
                             <option value="{{$route->id}}">

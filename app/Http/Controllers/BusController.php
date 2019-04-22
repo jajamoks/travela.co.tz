@@ -16,7 +16,7 @@ class BusController extends Controller
 
     public function create()
     {
-        return view('busses.add_bus');
+        return view('busses.addBus');
     }
 
     public function store(Request $request)

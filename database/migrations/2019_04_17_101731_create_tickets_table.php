@@ -12,9 +12,8 @@ class CreateTicketsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('bus_id');
             $table->integer('amount');
-            $table->string('toPlace');
             $table->string('issuedBy');
-            $table->string('fromPlace');
+            $table->integer('route_id');
             $table->string('customerName');
             $table->string('additinalInfo');
             $table->timestamp('bookedDate');

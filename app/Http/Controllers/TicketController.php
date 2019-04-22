@@ -18,7 +18,7 @@ class TicketController extends Controller
     public function create()
     {
       $routes = Route::all();
-      return view('tickets.new_ticket')->with('routes', $routes);
+      return view('tickets.newTicket')->with('routes', $routes);
     }
 
     public function store(Request $request)

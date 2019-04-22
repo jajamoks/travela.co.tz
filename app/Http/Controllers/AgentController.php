@@ -15,7 +15,7 @@ class AgentController extends Controller
 
     public function create(Request $request)
     {
-      return view('agents.add_agent');
+      return view('agents.addAgent');
 
     }
     public function store(Request $request)

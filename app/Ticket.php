@@ -8,4 +8,6 @@ class Ticket extends Model
 {
   protected $dates = ['bookedDate'];
 
+  protected $fillable = ['route_id',];
+
 }

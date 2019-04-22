@@ -38,13 +38,13 @@
     <div class="page-wrapper app" id="app">
         @guest
         @else
-        @include('inc.header_mobile')
+        @include('inc.headerMobile')
         @include('inc.sidebar')
         @endguest
 
 
         <div class="page-container">
-            @include('inc.header_desktop')
+            @include('inc.headerDesktop')
             @yield('content')
         </div>
     </div>
