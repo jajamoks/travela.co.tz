@@ -22,18 +22,18 @@ Route::prefix('admin')->group(function () {
     Route::resource('/passengers', 'PassengerController')->only(['index', 'store', 'update', 'destroy']);
 
     // Bus
-    Route::get('/busses/add_bus', 'BusController@create');
+    Route::get('/busses/addBus', 'BusController@create');
     Route::resource('/busses', 'BusController')->only(['index', 'store', 'update', 'destroy']);
 
     // Route
-    Route::get('/routes/add_route', 'RouteController@create');
+    Route::get('/routes/addRoute', 'RouteController@create');
     Route::resource('/routes', 'RouteController')->only(['index', 'update', 'store', 'destroy']);
 
     // Agents
-    Route::get('/agents/add_agent', 'AgentController@create');
+    Route::get('/agents/addAgent', 'AgentController@create');
     Route::resource('/agents', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
 
     // Tickets
-    Route::get('/tickets/new_ticket', 'TicketController@create');
+    Route::get('/tickets/newTicket', 'TicketController@create');
     Route::resource('/tickets', 'TicketController')->only(['index', 'store', 'update', 'destroy']);
 });

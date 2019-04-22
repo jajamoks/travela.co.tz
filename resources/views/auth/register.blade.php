@@ -1,4 +1,4 @@
-@extends('layouts.app-auth')
+@extends('layouts.appAuth')
 
 @section('content')
 <div class="page-wrapper">

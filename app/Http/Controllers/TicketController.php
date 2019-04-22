@@ -24,13 +24,14 @@ class TicketController extends Controller
     public function store(Request $request)
     {
       $passanger = Passenger::create($request->only(
-        'name', 'number'
+        'name', 'number', 'email'
       ));
       $passanger->save();
 
-      // $ticket = Ticket::create($request->only(
-      //   ''
-      // ));
+      $ticket = Ticket::create($request->only(
+        'bookedDate', 'additionalInfo', 'issuedBy',
+        'issuedOn', ''
+      ));
 
       return redirect('admin/tickets');
     }

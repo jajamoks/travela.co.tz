@@ -5,8 +5,8 @@
     <div class="section__content section__content--p30">
         <div class="container-fluid">
             <div class="row">
-                @include('tickets.inc.customer_info')
-                @include('tickets.inc.seats_layout')
+                @include('tickets.inc.passangerInfo')
+                @include('tickets.inc.seatsLayout')
             </div>
         </div>
     </div>

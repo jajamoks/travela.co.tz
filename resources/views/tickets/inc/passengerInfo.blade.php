@@ -16,6 +16,14 @@
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
+                        <label for="email" class=" form-control-label">Passenger Email</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <input type="text" id="email" name="email" class="form-control">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
                         <label for="number" class=" form-control-label">Passenger Number</label>
                     </div>
                     <div class="col-12 col-md-9">

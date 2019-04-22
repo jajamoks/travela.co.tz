@@ -25,7 +25,7 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="/admin/tickets/new_ticket">
+                            <a href="/admin/tickets/newTicket">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
@@ -44,7 +44,7 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="/admin/agents/add_agent">
+                            <a href="/admin/agents/addAgent">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
@@ -62,7 +62,7 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="/admin/busses/add_bus">
+                            <a href="/admin/busses/addBus">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
@@ -80,7 +80,7 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="/admin/routes/add_route">
+                            <a href="/admin/routes/addRoute">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
