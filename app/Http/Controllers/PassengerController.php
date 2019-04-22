@@ -9,7 +9,8 @@ class PassengerController extends Controller
 {
     public function index()
     {
-        return view('passengers.index');
+      $passengers = Passenger::all();
+      return view('passengers.index')->with('passengers', $passengers);
     }
 
     public function create()

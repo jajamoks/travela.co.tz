@@ -44,7 +44,7 @@
                     </div>
                     <div class="col-12 col-md-9">
                         <select name="route_id" id="route_id" class="form-control">
-                            <option value="0">Please select</option>
+                            <option value="0">Please select route</option>
                             @foreach ($routes as $route)
                             <option value="{{$route->id}}">
                                 {{$route->fromPlace}} - {{$route->toPlace}} - T 345 AVG -
@@ -56,32 +56,31 @@
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="additinalInfo" class=" form-control-label">Additinal Info</label>
+                        <label for="additionalInfo" class=" form-control-label">Additinal Info</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <textarea name="additinalInfo" id="additinalInfo" rows="4" class="form-control"></textarea>
+                        <textarea name="additionalInfo" id="additionalInfo" rows="4" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="issued_by" class=" form-control-label">Issued By</label>
+                        <label for="issuedBy" class=" form-control-label">Issued By</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="issued_by" name="issued_by" placeholder="{{Auth::user()->name}}" disabled="" class="form-control">
+                        <input type="text" id="issuedBy" name="issuedBy" placeholder="{{Auth::user()->name}}" value="{{Auth::user()->name}}" class="form-control">
                     </div>
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
-                        <label for="dateIssued" class=" form-control-label">Issued On</label>
+                        <label for="issuedOn" class=" form-control-label">Issued On</label>
                     </div>
                     @php
                     $now = date("d M Y");
                     @endphp
                     <div class="col-12 col-md-9">
-                        <input type="text" id="dateIssued" name="dateIssued" placeholder="{{$now}}" disabled="" class="form-control">
+                        <input type="text" id="issuedOn" name="issuedOn" placeholder="{{$now}}" disabled="" class="form-control">
                     </div>
                 </div>
-
         </div>
         <div class="card-footer">
             <button type="submit" class="btn btn-primary btn-md">

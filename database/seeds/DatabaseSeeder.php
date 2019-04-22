@@ -10,6 +10,6 @@ class DatabaseSeeder extends Seeder
         $this->call(BussesTableSeeder::class);
         $this->call(RoutesTableSeeder::class);
         $this->call(AgentsTableSeeder::class);
-        $this->call(TicketsTableSeeder::class);
+        // $this->call(TicketsTableSeeder::class);
     }
 }

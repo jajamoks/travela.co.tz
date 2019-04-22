@@ -29,9 +29,11 @@ class TicketController extends Controller
       $passanger->save();
 
       $ticket = Ticket::create($request->only(
-        'bookedDate', 'additionalInfo', 'issuedBy',
-        'issuedOn', ''
+        'bookedDate', 'additionalInfo', 'route_id',
+        'issuedBy'
       ));
+
+      $ticket->save();
 
       return redirect('admin/tickets');
     }

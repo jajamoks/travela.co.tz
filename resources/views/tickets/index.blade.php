@@ -27,7 +27,7 @@
                                     <td>J{{$ticket->customerName}}</td>
                                     <td>{{$ticket->bus_id}}</td>
                                     <td>{{$ticket->toPlace}}</td>
-                                    <td>{{$ticket->bookedDate->format('d M Y')}}</td>
+                                    <td>{{$ticket->bookedDate}}</td>
                                     <td class="text-right">{{number_format($ticket->amount)}}</td>
                                 </tr>
                                 @endforeach
