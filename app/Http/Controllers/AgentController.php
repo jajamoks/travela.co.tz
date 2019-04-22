@@ -25,7 +25,7 @@ class AgentController extends Controller
         'name', 'email','number','city'
       ));
       $agent->save();
-      return view('agents.index')->with('agents', $agents);
+      return redirect('agents.index')->with('agents', $agents);
     }
 
     public function show(Agent $agent)

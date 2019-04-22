@@ -98,7 +98,7 @@
                                 @foreach ($tickets as $ticket)
                                 <tr>
                                     <td>{{$ticket->id}}</td>
-                                    <td>J{{$ticket->customerName}}</td>
+                                    <td>{{$ticket->customerName}}</td>
                                     <td>{{$ticket->bus_id}}</td>
                                     <td>{{$ticket->from}} - {{$ticket->to}}</td>
                                     <td>{{$ticket->bookedDate->format('d M Y')}}</td>
