@@ -15,7 +15,7 @@
                                     <label for="bus-name" class="control-label mb-1">Bus Name</label>
                                     <select id="bus-name" name="bus_id" type="text" class="form-control" aria-required="true" aria-invalid="false">
                                         @foreach ($bus as $bus)
-                                        <option value="{{$bus->id}}">{{$bus->registration_number}}</option>
+                                        <option value="{{$bus->id}}">{{$bus->registrationNumber}}</option>
                                         @endforeach
                                     </select>
                                     <input>

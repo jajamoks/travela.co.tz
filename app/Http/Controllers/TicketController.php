@@ -30,8 +30,10 @@ class TicketController extends Controller
 
       $ticket = Ticket::create($request->only(
         'bookedDate', 'additionalInfo', 'route_id',
-        'issuedBy'
+        'issuedBy', 'passenger_id'
       ));
+
+      $ticket->passenger_id == $passanger->id;
 
       $ticket->save();
 

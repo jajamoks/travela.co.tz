@@ -10,7 +10,7 @@ class Ticket extends Model
 
   protected $fillable = [
     'route_id', 'additionalInfo', 'bookedDate',
-    'issuedBy'
+    'issuedBy', 'passenger_id'
   ];
 
 }

@@ -21,7 +21,7 @@ class BusController extends Controller
 
     public function store(Request $request)
     {
-      $bus = Bus::create($request->only('name', 'type','registration_number','seats'));
+      $bus = Bus::create($request->only('name', 'type','registrationNumber','seats'));
       $bus->save();
 
       return redirect('admin/busses');

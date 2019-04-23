@@ -16,9 +16,9 @@
                                     <input id="name" name="name" type="text" class="form-control" aria-required="true" aria-invalid="false">
                                 </div>
                                 <div class="col-md-6 form-group has-success">
-                                    <label for="registration_number" class="control-label mb-1">Bus Registration Number</label>
-                                    <input id="registration_number" name="registration_number" type="text" class="form-control">
-                                    <span class="help-block field-validation-valid" data-valmsg-for="registration_number" data-valmsg-replace="true"></span>
+                                    <label for="registrationNumber" class="control-label mb-1">Bus Registration Number</label>
+                                    <input id="registrationNumber" name="registrationNumber" type="text" class="form-control">
+                                    <span class="help-block field-validation-valid" data-valmsg-for="registrationNumber" data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="type" class="control-label mb-1">Bus Type</label>

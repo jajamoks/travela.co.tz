@@ -47,7 +47,7 @@
                             <option value="0">Please select route</option>
                             @foreach ($routes as $route)
                             <option value="{{$route->id}}">
-                                {{$route->fromPlace}} - {{$route->toPlace}} - T 345 AVG -
+                                {{$route->fromPlace}} - {{$route->toPlace}} - {{$route->bus->registrationNumber}} -
                                 {{date("h : i A", strtotime($route->departure_time))}}
                             </option>
                             @endforeach

@@ -13,7 +13,7 @@ class BussesTableSeeder extends Seeder
              'seats' => $faker->randomElement(['61', '60', '62']),
              'name' => $faker->randomElement(['YOUTONG', 'HIGHER', 'MORCOPOLO']),
              'type' => $faker->randomElement(['Luxury', 'Semi-Luxury', 'Ordinary']),
-             'registration_number' => 'T ' .$faker->numberBetween($min = 100, $max = 999). ' ' .Str::random(3),
+             'registrationNumber' => 'T ' .$faker->numberBetween($min = 100, $max = 999). ' ' .Str::random(3),
            ]);
            $bus->save();
        }

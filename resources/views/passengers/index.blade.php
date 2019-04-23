@@ -24,7 +24,7 @@
                                 <tr>
                                     <td>{{$passenger->id}}</td>
                                     <td>{{$passenger->name}}</td>
-                                    <td class="text-uppercase">{{$passenger->registration_number}}</td>
+                                    <td class="text-uppercase">{{$passenger->registrationNumber}}</td>
                                     <td>{{$passenger->type}}</td>
                                     <td class="text-right">{{$passenger->seats}}</td>
                                     <td>Action</td>

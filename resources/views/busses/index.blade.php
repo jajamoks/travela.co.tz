@@ -24,7 +24,7 @@
                                 <tr>
                                     <td>{{$bus->id}}</td>
                                     <td>{{$bus->name}}</td>
-                                    <td class="text-uppercase">{{$bus->registration_number}}</td>
+                                    <td class="text-uppercase">{{$bus->registrationNumber}}</td>
                                     <td>{{$bus->type}}</td>
                                     <td class="text-right">{{$bus->seats}}</td>
                                     <td>Action</td>

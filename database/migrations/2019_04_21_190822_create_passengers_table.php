@@ -13,7 +13,6 @@ class CreatePassengersTable extends Migration
           $table->string("name");
           $table->string("email");
           $table->integer("number");
-          $table->integer("ticket_id");
           $table->timestamps();
         });
     }

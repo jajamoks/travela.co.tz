@@ -12,7 +12,7 @@ class TicketsTableSeeder extends Seeder
            $ticket = App\Ticket::create([
                'bus_id' => '1',
                'route_id' => '1',
-               'passanger_id' => '1',
+               'passenger_id' => '1',
                'issuedBy' => $faker->name,
                'bookedDate' => $faker->date,
                'additionalInfo' => $faker->text(40),

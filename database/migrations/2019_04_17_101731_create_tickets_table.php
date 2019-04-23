@@ -12,11 +12,11 @@ class CreateTicketsTable extends Migration
             $table->bigIncrements('id');
             $table->string('issuedBy');
             $table->integer('route_id');
-            $table->string('passanger_id');
             $table->timestamp('bookedDate');
-            $table->string('additionalInfo');
-            $table->integer('amount')->nullable();
             $table->integer('bus_id')->nullable();
+            $table->integer('amount')->nullable();
+            $table->integer('passenger_id')->nullable();
+            $table->string('additionalInfo')->default('None');
             $table->timestamps();
         });
     }
