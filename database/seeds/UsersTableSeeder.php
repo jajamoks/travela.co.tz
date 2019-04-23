@@ -15,14 +15,18 @@ class UsersTableSeeder extends Seeder
 
 
       $admin = new User();
-      $admin->name = 'Admin';
+      $admin->city = 'localhost';
+      $admin->name = 'Test Admin';
+      $admin->number = 'Port 8080';
       $admin->email = 'admin@bts.me';
       $admin->password = bcrypt('qazwsx');
       $admin->save();
       $admin->roles()->attach($role_admin);
 
       $agent = new User();
-      $agent->name = 'Agent';
+      $agent->city = 'localhost';
+      $agent->name = 'Test Agent';
+      $agent->number = 'Port 8080';
       $agent->email = 'agent@bts.me';
       $agent->password = bcrypt('qazwsx');
       $agent->save();

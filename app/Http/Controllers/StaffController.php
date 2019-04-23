@@ -17,4 +17,25 @@ class StaffController extends Controller
       $roles = Role::all();
       return view('staffs.addStaff')->with('roles', $roles);
     }
+
+    public function store(Request $request){
+      $role_admin = Role::where('name', 'Admin')->first();
+      $role_agent = Role::where('name', 'Agent')->first();
+
+      $user = new User();
+      $user->name = $request['name'];
+      $user->city = $request['city'];
+      $user->email = $request['email'];
+      $user->number = $request['number'];
+      $user->password = bcrypt('qazwsx');
+      $user->save();
+
+      if ($request['role'] === '1') {
+        $user->roles()->attach($role_admin);
+      }elseif ($request['role'] === '2') {
+        $user->roles()->attach($role_agent);
+      }
+
+      return redirect('admin/staffs');
+    }
 }
