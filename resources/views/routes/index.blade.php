@@ -22,7 +22,7 @@
                             <tbody>
                                 @foreach ($route as $route)
                                 <tr>
-                                    <td>{{$route->bus_name}}</td>
+                                    <td>{{$route->bus->registration_number}}</td>
                                     <td>{{$route->fromPlace}}</td>
                                     <td>{{$route->departure_time}}</td>
                                     <td>{{$route->toPlace}}</td>

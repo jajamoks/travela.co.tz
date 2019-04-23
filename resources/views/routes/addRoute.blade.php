@@ -13,7 +13,7 @@
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <label for="bus-name" class="control-label mb-1">Bus Name</label>
-                                    <select id="bus-name" name="bus_name" type="text" class="form-control" aria-required="true" aria-invalid="false">
+                                    <select id="bus-name" name="bus_id" type="text" class="form-control" aria-required="true" aria-invalid="false">
                                         @foreach ($bus as $bus)
                                         <option value="{{$bus->id}}">{{$bus->registration_number}}</option>
                                         @endforeach

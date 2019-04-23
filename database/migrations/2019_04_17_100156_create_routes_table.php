@@ -10,7 +10,7 @@ class CreateRoutesTable extends Migration
     {
         Schema::create('routes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer("bus_name");
+            $table->integer("bus_id");
             $table->string("toPlace")->nullable();
             $table->string("fromPlace")->nullable();
             $table->time('arrival_time')->nullable();

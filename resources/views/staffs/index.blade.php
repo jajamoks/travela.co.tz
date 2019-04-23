@@ -13,8 +13,8 @@
                                 <tr>
                                     <th>Id</th>
                                     <th>Name</th>
+                                    <th>Role</th>
                                     <th>Number</th>
-                                    {{-- <th>Email</th> --}}
                                     <th>City</th>
                                     <th>Actions</th>
                                 </tr>
@@ -24,8 +24,12 @@
                                 <tr>
                                     <td>{{$user->id}}</td>
                                     <td>{{$user->name}}</td>
+                                    <td>
+                                        @foreach( $user->roles as $role)
+                                        {{$role->name}}
+                                        @endforeach
+                                    </td>
                                     <td>{{$user->number}}</td>
-                                    {{-- <td>{{$user->email}}</td> --}}
                                     <td>{{$user->city}}</td>
                                     <td>Action</td>
                                 </tr>
