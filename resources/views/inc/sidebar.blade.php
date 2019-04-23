@@ -30,25 +30,27 @@
                         </li>
                         <li>
                             <a href="/admin/tickets">
-                              <i class="fas fa-check-square"></i>All Tickets
+                                <i class="fas fa-check-square"></i>All Tickets
                             </a>
                         </li>
                     </ul>
                 </li>
+
+                @if (Auth::user()->hasRole('Admin')==1)
                 <li class="has-sub">
                     <a class="js-arrow" href="#">
-                        <i class="fas fa-user"></i>Agents
+                        <i class="fas fa-user"></i>Staffs
                         <span class="arrow">
                             <i class="fas fa-angle-down"></i>
                         </span>
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="/admin/agents/addAgent">
+                            <a href="/admin/staffs/addStaff">
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
-                            <a href="/admin/agents">
+                            <a href="/admin/staffs">
                                 <i class="far fa-check-square"></i>View All</a>
                         </li>
                     </ul>
@@ -89,6 +91,8 @@
                         </li>
                     </ul>
                 </li>
+                @endif
+
             </ul>
         </nav>
     </div>

@@ -15,20 +15,27 @@ class UsersTableSeeder extends Seeder
 
 
       $admin = new User();
-        $admin->name = 'Admin';
-        $admin->email = 'admin@bts.me';
-        $admin->password = bcrypt('qazwsx');
-        $admin->save();
-        $admin->roles()->attach($role_admin);
+      $admin->name = 'Admin';
+      $admin->email = 'admin@bts.me';
+      $admin->password = bcrypt('qazwsx');
+      $admin->save();
+      $admin->roles()->attach($role_admin);
 
-       for ($i = 0; $i < 7; $i++) {
-           $user = App\User::create([
-               'name' => $faker->name,
-               'email' => $faker->UserName .'@bts.me',
-               'password' => bcrypt('qazwsx'),
-           ]);
-           $user->roles()->attach($role_agent);
-           $user->save();
-       }
+      $agent = new User();
+      $agent->name = 'Agent';
+      $agent->email = 'agent@bts.me';
+      $agent->password = bcrypt('qazwsx');
+      $agent->save();
+      $agent->roles()->attach($role_agent);
+
+       // for ($i = 0; $i < 7; $i++) {
+       //     $user = App\User::create([
+       //         'name' => $faker->name,
+       //         'email' => $faker->UserName .'@bts.me',
+       //         'password' => bcrypt('qazwsx'),
+       //     ]);
+       //     $user->roles()->attach($role_agent);
+       //     $user->save();
+       // }
     }
 }

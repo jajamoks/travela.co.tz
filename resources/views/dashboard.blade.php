@@ -4,6 +4,7 @@
 <div class="main-content">
     <div class="section__content section__content--p30">
         <div class="container-fluid">
+            @if (Auth::user()->hasRole('Admin')==1)
             <div class="row">
                 <div class="col-md-12">
                     <div class="overview-wrap">
@@ -77,6 +78,8 @@
                     </div>
                 </div>
             </div>
+            @endif
+
 
             <div class="row">
                 <div class="col-lg-12">
