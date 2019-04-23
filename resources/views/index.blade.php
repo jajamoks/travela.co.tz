@@ -28,6 +28,7 @@
                background-color: #fff;
                color: #636b6f;
                font-family: 'Nunito', sans-serif;
+               -moz-user-select: none;
                font-weight: 200;
                height: 100vh;
                margin: 0;
@@ -139,7 +140,7 @@
             </div>
             <div class="col-md-6">
                 <div class="tb_bus">
-                    <img src="http://demo.truebus.co.in/assets/images/bus.png">
+                    <img src="http://demo.truebus.co.in/assets/images/bus.png" draggable="false">
                 </div>
             </div>
         </div>
