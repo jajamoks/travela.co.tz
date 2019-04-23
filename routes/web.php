@@ -9,9 +9,7 @@ Auth::routes();
 Route::get('/test');
 
 // Landing Page
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index');
 
 // Dashboard
 Route::get('/dashboard', 'DashboardController@index');

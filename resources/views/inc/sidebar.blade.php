@@ -26,7 +26,7 @@
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
                             <a href="/admin/tickets/newTicket">
-                                <i class="fas fa-plus"></i>Add new</a>
+                                <i class="fas fa-plus"></i>New Ticket</a>
                         </li>
                         <li>
                             <a href="/admin/tickets">

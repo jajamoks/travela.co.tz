@@ -41,8 +41,6 @@
         @include('inc.headerMobile')
         @include('inc.sidebar')
         @endguest
-
-
         <div class="page-container">
             @include('inc.headerDesktop')
             @yield('content')
