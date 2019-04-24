@@ -28,7 +28,7 @@
                                     <td>{{$ticket->route->bus->registrationNumber}}</td>
                                     <td>{{$ticket->route->toPlace}}</td>
                                     <td>{{$ticket->bookedDate}}</td>
-                                    <td class="text-right">{{number_format($ticket->route->price)}}</td>
+                                    <td class="text-right">{{number_format($ticket->route->amount)}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>

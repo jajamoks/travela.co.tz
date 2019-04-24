@@ -16,7 +16,6 @@ class TicketsTableSeeder extends Seeder
                'issuedBy' => $faker->name,
                'bookedDate' => $faker->date,
                'additionalInfo' => $faker->text(40),
-               'amount' => $faker->randomElement(['34000', '36000' , '37000']),
            ]);
            $ticket->save();
        }

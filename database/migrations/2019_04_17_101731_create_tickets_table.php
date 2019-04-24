@@ -14,7 +14,6 @@ class CreateTicketsTable extends Migration
             $table->integer('route_id');
             $table->timestamp('bookedDate');
             $table->integer('bus_id')->nullable();
-            $table->integer('amount')->nullable();
             $table->integer('passenger_id')->nullable();
             $table->string('additionalInfo')->default('None');
             $table->timestamps();
