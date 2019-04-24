@@ -1,3 +1,44 @@
+.seatChartsContainer {
+    border-right: 1px dotted #adadad;
+    width: 250px;
+    padding: 20px;
+    float: left;
+}
+
+.seatInfoContainer {
+    width: 200px;
+    padding: 20px;
+    float: left;
+}
+
+.seatCharts-row {
+    height: 35px;
+}
+
+.seatCharts-space {
+    background-color: white;
+}
+
+.unavailable{
+  background-color: #472B34;
+}
+.available{
+      background-color: #3a78c3;
+}
+
+.seatCharts-cell {
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+    color: #fff;
+    float: left;
+    outline: none;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 4px;
+}
+
 /*------------------------------------------------------------------
 [Master Stylesheet]
 

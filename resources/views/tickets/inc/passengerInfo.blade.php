@@ -59,10 +59,10 @@
                         <label for="additionalInfo" class=" form-control-label">Additinal Info</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <textarea name="additionalInfo" id="additionalInfo" rows="4" class="form-control"></textarea>
+                        <textarea name="additionalInfo" id="additionalInfo" rows="3" class="form-control"></textarea>
                     </div>
                 </div>
-                <div class="row form-group">
+                {{-- <div class="row form-group">
                     <div class="col col-md-3">
                         <label for="issuedBy" class=" form-control-label">Issued By</label>
                     </div>
@@ -80,16 +80,9 @@
                     <div class="col-12 col-md-9">
                         <input type="text" id="issuedOn" name="issuedOn" placeholder="{{$now}}" readonly class="form-control">
                     </div>
-                </div>
+                </div> --}}
         </div>
-        <div class="card-footer">
-            <button type="submit" class="btn btn-primary btn-md">
-                Submit
-            </button>
-            <button type="reset" class="btn btn-danger btn-md" disabled>
-                Reset
-            </button>
-        </div>
+
         </form>
     </div>
 </div>
