@@ -18,14 +18,12 @@ class Receipt extends Mailable
 
     public function build()
     {
-      $route == $this->passenger->ticket->route->fromPlace
-      .'-' .$this->passenger->ticket->route->toPlace;
-
         return $this->view('emails.receipt')
         ->with('name', $this->passenger->name)
-        ->with('route', $route)
         ->with('issuedBy', $this->passenger->ticket->issuedBy)
         ->with('issuedOn', $this->passenger->ticket->created_at)
-        ->with('bookedDate', $this->passenger->ticket->bookedDate);
+        ->with('bookedDate', $this->passenger->ticket->bookedDate)
+        ->with('toPlace', $this->passenger->ticket->route->toPlace)
+        ->with('fromPlace', $this->passenger->ticket->route->fromPlace);
     }
 }

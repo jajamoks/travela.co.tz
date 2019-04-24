@@ -20,8 +20,10 @@
                             <tr>
                                 <td class="content-block">
                                     <span class="apple-link">&copy; OBTB - {{ config('app.name') }},
-                                        @php echo(date('Y'))
-                                        @endphp</span>
+                                        @php
+                                        echo(date('Y.'))
+                                        @endphp
+                                    </span>
                                 </td>
                             </tr>
                             <!-- ./tr-->
