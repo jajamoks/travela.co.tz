@@ -13,7 +13,8 @@
                         </a>
                     </div>
                     <div class="login-form">
-                        <form method="POST" action="{{ route('register') }}">
+                        {{-- <form method="POST" action="{{ route('register') }}"> --}}
+                        <form class="" action="index.html" method="post">
                             @csrf
                             <div class="form-group">
                                 <label>Name</label>

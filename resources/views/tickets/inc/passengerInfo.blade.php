@@ -67,7 +67,7 @@
                         <label for="issuedBy" class=" form-control-label">Issued By</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="issuedBy" name="issuedBy" placeholder="{{Auth::user()->name}}" readonly value="{{Auth::user()->name}}" class="form-control">
+                        <input type="text" id="issuedBy" name="issuedBy" placeholder="{{Auth::user()->name}}" value="{{Auth::user()->name}}" class="form-control">
                     </div>
                 </div>
                 <div class="row form-group">

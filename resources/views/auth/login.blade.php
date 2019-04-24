@@ -49,12 +49,12 @@
                             <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
 
                         </form>
-                        <div class="register-link">
+                        {{-- <div class="register-link">
                             <p>
                                 Don't you have account?
                                 <a href="{{ route('register') }}">Sign Up Here</a>
                             </p>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

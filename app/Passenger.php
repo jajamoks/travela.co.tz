@@ -7,8 +7,4 @@ use Illuminate\Database\Eloquent\Model;
 class Passenger extends Model
 {
     protected $fillable = ['name', 'number', 'email'];
-
-    public function ticket(){
-      return $this->belongsTo(Ticket::class);
-    }
 }

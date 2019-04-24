@@ -12,7 +12,9 @@ class TicketController extends Controller
     public function index()
     {
       $tickets = Ticket::all();
-      return view('tickets.index')->with('tickets', $tickets);
+      $passengers = Passenger::all();
+      return view('tickets.index')->with('tickets', $tickets)
+      ->with('passengers', $passengers);
     }
 
     public function create()
@@ -23,19 +25,18 @@ class TicketController extends Controller
 
     public function store(Request $request)
     {
-      $passanger = Passenger::create($request->only(
+      $passenger = Passenger::create($request->only(
         'name', 'number', 'email'
       ));
-      $passanger->save();
+      $passenger->save();
 
-      $ticket = Ticket::create($request->only(
-        'bookedDate', 'additionalInfo', 'route_id',
-        'issuedBy', 'passenger_id'
-      ));
-
-      $ticket->passenger_id == $passanger->id;
-
-      $ticket->save();
+      Ticket::create([
+        'passenger_id' => $passenger->id,
+        'issuedBy' => $request->input('issuedBy'),
+        'route_id' => $request->input('route_id'),
+        'bookedDate' => $request->input('bookedDate'),
+        'additionalInfo' => $request->input('additionalInfo'),
+      ]);
 
       return redirect('admin/tickets');
     }

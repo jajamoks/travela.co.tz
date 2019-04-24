@@ -13,7 +13,7 @@
                             <thead>
                                 <tr>
                                     <th>Id</th>
-                                    <th>Customer</th>
+                                    <th>Passenger</th>
                                     <th>Bus</th>
                                     <th>To Place</th>
                                     <th>Booked Date</th>
@@ -24,11 +24,11 @@
                                 @foreach ($tickets as $ticket)
                                 <tr>
                                     <td>{{$ticket->id}}</td>
-                                    <td>J{{$ticket->customerName}}</td>
-                                    <td>{{$ticket->bus_id}}</td>
-                                    <td>{{$ticket->toPlace}}</td>
+                                    <td>{{$ticket->passenger->name}}</td>
+                                    <td>{{$ticket->route->bus->registrationNumber}}</td>
+                                    <td>{{$ticket->route->toPlace}}</td>
                                     <td>{{$ticket->bookedDate}}</td>
-                                    <td class="text-right">{{number_format($ticket->amount)}}</td>
+                                    <td class="text-right">{{number_format($ticket->route->price)}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
