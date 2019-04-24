@@ -82,7 +82,14 @@
                     </div>
                 </div> --}}
         </div>
-
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary btn-md">
+                Book Ticket
+            </button>
+            <button type="reset" class="btn btn-danger btn-md" disabled>
+                Reset Form
+            </button>
+        </div>
         </form>
     </div>
 </div>

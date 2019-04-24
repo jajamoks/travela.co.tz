@@ -26,6 +26,10 @@
       background-color: #3a78c3;
 }
 
+.reserved{
+  background-color: #dc3545;
+}
+
 .seatCharts-cell {
     height: 25px;
     width: 25px;
