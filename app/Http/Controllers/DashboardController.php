@@ -22,6 +22,7 @@ class dashboardController extends Controller
       $total_staffs = User::All()->count();
       $total_busses = Bus::All()->count();
       $tickets = Ticket::all();
+      $ticket = Ticket::all();
 
       return view('dashboard')
       ->with('user', $user)

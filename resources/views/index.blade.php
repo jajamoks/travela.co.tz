@@ -105,7 +105,7 @@
                                 <select class="browser-default XXinput  custom-select searchings">
                                     <option value="0">Please select from</option>
                                     @foreach ($routes as $route)
-                                    <option value="{{$route->id}}"> {{$route->fromPlace}} </option>
+                                    <option value="{{$route->id}}"> {{$route->fromPlace}} - {{$route->departure_time}} </option>
                                     @endforeach
                                 </select>
 

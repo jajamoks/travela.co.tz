@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Role;
 use App\User;
+use App\Mail\Welcome;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class StaffController extends Controller
 {
@@ -27,7 +29,7 @@ class StaffController extends Controller
       $user->city = $request['city'];
       $user->email = $request['email'];
       $user->number = $request['number'];
-      $user->password = bcrypt('qazwsx');
+      $user->password = bcrypt('qazplm');
       $user->save();
 
       if ($request['role'] === '1') {
@@ -35,6 +37,8 @@ class StaffController extends Controller
       }elseif ($request['role'] === '2') {
         $user->roles()->attach($role_agent);
       }
+      // Mail::to($request->user())->send(new Welcome($user));
+      Mail::to($request->email)->send(new Welcome($user));
 
       return redirect('admin/staffs');
     }
