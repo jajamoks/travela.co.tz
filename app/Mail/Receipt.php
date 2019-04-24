@@ -10,15 +10,22 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class Receipt extends Mailable
 {
     use Queueable, SerializesModels;
-    public $user;
 
-    public function __construct($user)
+    public function __construct($passenger)
     {
-        $this->user = $user;
+      $this->passenger = $passenger;
     }
 
     public function build()
     {
-        return $this->view('emails.receipt');
+      $route == $this->passenger->ticket->route->fromPlace
+      .'-' .$this->passenger->ticket->route->toPlace;
+
+        return $this->view('emails.receipt')
+        ->with('name', $this->passenger->name)
+        ->with('route', $route)
+        ->with('issuedBy', $this->passenger->ticket->issuedBy)
+        ->with('issuedOn', $this->passenger->ticket->created_at)
+        ->with('bookedDate', $this->passenger->ticket->bookedDate);
     }
 }
