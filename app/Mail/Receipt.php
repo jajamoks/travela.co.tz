@@ -7,17 +7,18 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class Welcome extends Mailable
+class Receipt extends Mailable
 {
     use Queueable, SerializesModels;
     public $user;
+
     public function __construct($user)
     {
-         $this->user = $user;
+        $this->user = $user;
     }
 
     public function build()
     {
-        return $this->view('emails.welcome');
+        return $this->view('emails.receipt');
     }
 }

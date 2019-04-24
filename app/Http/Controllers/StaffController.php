@@ -37,7 +37,6 @@ class StaffController extends Controller
       }elseif ($request['role'] === '2') {
         $user->roles()->attach($role_agent);
       }
-      // Mail::to($request->user())->send(new Welcome($user));
       Mail::to($request->email)->send(new Welcome($user));
 
       return redirect('admin/staffs');

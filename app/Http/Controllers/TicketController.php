@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Route;
 use App\Ticket;
 use App\Passenger;
+use App\Mail\Receipt;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class TicketController extends Controller
 {
@@ -37,6 +39,8 @@ class TicketController extends Controller
         'bookedDate' => $request->input('bookedDate'),
         'additionalInfo' => $request->input('additionalInfo'),
       ]);
+
+      Mail::to($request->email)->send(new Receipt($passenger));
 
       return redirect('admin/tickets');
     }

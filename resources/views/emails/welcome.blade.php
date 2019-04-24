@@ -7,8 +7,8 @@
                 <tr>
                     <td>
                         <p>Hi there, {{$user->name}}</p>
-                        <p>You are receiving this email because you have been registered as an <b>{{$user->role->name}}</b>
-                            to <b>Online Bus Ticket Booking</b>.</p>
+                        <p>You are receiving this email because you have been registered to
+                           <b>Online Bus Ticket Booking</b> Portal. Kindly Log in to view your account.</p>
                         <p>
                             Your temporary login credentials are <br>
                             Email : {{$user->email}} <br>
