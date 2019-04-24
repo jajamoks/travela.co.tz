@@ -14,9 +14,7 @@
                                     <th>Id</th>
                                     <th>Name</th>
                                     <th>Number</th>
-                                    <th>Seat</th>
-                                    <th>Bus No</th>
-                                    <th>Booked Date</th>
+                                    <th>Email</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -24,10 +22,8 @@
                                 <tr>
                                     <td>{{$passenger->id}}</td>
                                     <td>{{$passenger->name}}</td>
-                                    <td class="text-uppercase">{{$passenger->registrationNumber}}</td>
-                                    <td>{{$passenger->type}}</td>
-                                    <td class="text-right">{{$passenger->seats}}</td>
-                                    <td>Action</td>
+                                    <td>{{$passenger->number}}</td>
+                                    <td>{{$passenger->email}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>

@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Bus;
 use App\User;
+use App\Route;
 use App\Ticket;
 use Illuminate\Http\Request;
 
@@ -16,7 +17,7 @@ class dashboardController extends Controller
     public function index(Request $request)
     {
       $user = User::findOrFail($request->user()->id);
-      $total_earnings = Ticket::All()->sum('amount');
+      $total_earnings = Route::All()->sum('amount');
       $total_tickets = Ticket::All()->count();
       $total_staffs = User::All()->count();
       $total_busses = Bus::All()->count();

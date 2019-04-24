@@ -67,7 +67,7 @@
                         <label for="issuedBy" class=" form-control-label">Issued By</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="issuedBy" name="issuedBy" placeholder="{{Auth::user()->name}}" value="{{Auth::user()->name}}" class="form-control">
+                        <input type="text" id="issuedBy" readonly name="issuedBy" placeholder="{{Auth::user()->name}}" value="{{Auth::user()->name}}" class="form-control">
                     </div>
                 </div>
                 <div class="row form-group">
@@ -78,7 +78,7 @@
                     $now = date("d M Y");
                     @endphp
                     <div class="col-12 col-md-9">
-                        <input type="text" id="issuedOn" name="issuedOn" placeholder="{{$now}}" disabled="" class="form-control">
+                        <input type="text" id="issuedOn" name="issuedOn" placeholder="{{$now}}" readonly class="form-control">
                     </div>
                 </div>
         </div>

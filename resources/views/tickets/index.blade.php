@@ -12,11 +12,11 @@
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
-                                    <th>Id</th>
+                                    <th>Ticket Id</th>
                                     <th>Passenger</th>
                                     <th>Bus</th>
-                                    <th>To Place</th>
-                                    <th>Booked Date</th>
+                                    <th>Route</th>
+                                    <th>Traveling Date</th>
                                     <th class="text-right">Price</th>
                                 </tr>
                             </thead>
@@ -26,8 +26,8 @@
                                     <td>{{$ticket->id}}</td>
                                     <td>{{$ticket->passenger->name}}</td>
                                     <td>{{$ticket->route->bus->registrationNumber}}</td>
-                                    <td>{{$ticket->route->toPlace}}</td>
-                                    <td>{{$ticket->bookedDate}}</td>
+                                    <td>{{$ticket->route->fromPlace}} - {{$ticket->route->toPlace}}</td>
+                                    <td>{{date('d M Y', strtotime($ticket->bookedDate))}}</td>
                                     <td class="text-right">{{number_format($ticket->route->amount)}}</td>
                                 </tr>
                                 @endforeach

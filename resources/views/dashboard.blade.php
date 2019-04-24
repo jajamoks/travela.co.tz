@@ -88,25 +88,25 @@
                     <div class="table-responsive table--no-card m-b-40">
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
-                                <tr>
-                                    <th>Booking ID</th>
-                                    <th>Customer</th>
-                                    <th>Bus</th>
-                                    <th>Route</th>
-                                    <th>Booked Date</th>
-                                    <th class="text-right">Price</th>
-                                </tr>
+                              <tr>
+                                  <th>Ticket Id</th>
+                                  <th>Passenger</th>
+                                  <th>Bus</th>
+                                  <th>Route</th>
+                                  <th>Traveling Date</th>
+                                  <th class="text-right">Price</th>
+                              </tr>
                             </thead>
                             <tbody>
                                 @foreach ($tickets as $ticket)
-                                <tr>
-                                    <td>{{$ticket->id}}</td>
-                                    <td>{{$ticket->customerName}}</td>
-                                    <td>{{$ticket->bus_id}}</td>
-                                    <td>{{$ticket->from}} - {{$ticket->to}}</td>
-                                    <td>{{$ticket->bookedDate->format('d M Y')}}</td>
-                                    <td class="text-right">{{$ticket->amount}}</td>
-                                </tr>
+                                  <tr>
+                                      <td>{{$ticket->id}}</td>
+                                      <td>{{$ticket->passenger->name}}</td>
+                                      <td>{{$ticket->route->bus->registrationNumber}}</td>
+                                      <td>{{$ticket->route->fromPlace}} - {{$ticket->route->toPlace}}</td>
+                                      <td>{{date('d M Y', strtotime($ticket->bookedDate))}}</td>
+                                      <td class="text-right">{{number_format($ticket->route->amount)}}</td>
+                                  </tr>
                                 @endforeach
                             </tbody>
                         </table>
