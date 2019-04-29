@@ -28,4 +28,9 @@ class Ticket extends Model
         return $this->belongsTo(Bus::class);
     }
 
+  public function seat()
+  {
+      return $this->belongsToMany(Seat::class);
+  }
+
 }

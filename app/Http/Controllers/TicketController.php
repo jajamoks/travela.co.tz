@@ -29,7 +29,7 @@ class TicketController extends Controller
       ->with('routes', $routes)->with('all_seats', $all_seats);
     }
 
-    public function store(Request $request)
+    public function store(Request $request, $id)
     {
       $passenger = Passenger::create($request->only(
         'name', 'number', 'email'
@@ -42,6 +42,11 @@ class TicketController extends Controller
         'route_id' => $request->input('route_id'),
         'bookedDate' => $request->input('bookedDate'),
         'additionalInfo' => $request->input('additionalInfo'),
+      ]);
+
+      $seat = Seat::all();
+      $seat->where('id', $id)->update([
+        'status' => 'Booked'
       ]);
 
       Mail::to($request->email)->send(new Receipt($passenger));
