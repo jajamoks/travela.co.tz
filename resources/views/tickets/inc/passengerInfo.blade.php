@@ -11,7 +11,7 @@
                         <label for="name" class=" form-control-label">Passenger Name</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="name" name="name" class="form-control">
+                        <input type="text" id="name" name="name" class="form-control" required>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -19,7 +19,7 @@
                         <label for="email" class=" form-control-label">Passenger Email</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="text" id="email" name="email" class="form-control">
+                        <input type="text" id="email" name="email" class="form-control" required>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -27,7 +27,7 @@
                         <label for="number" class=" form-control-label">Passenger Number</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="number" id="number" name="number" class="form-control">
+                        <input type="number" id="number" name="number" class="form-control" required>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -35,7 +35,7 @@
                         <label for="bookedDate" class=" form-control-label">Date Of Travel</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <input type="date" id="bookedDate" name="bookedDate" class="form-control">
+                        <input type="date" id="bookedDate" name="bookedDate" class="form-control" required>
                     </div>
                 </div>
                 <div class="row form-group">
@@ -43,7 +43,7 @@
                         <label for="route_id" class=" form-control-label">Route</label>
                     </div>
                     <div class="col-12 col-md-9">
-                        <select name="route_id" id="route_id" class="form-control">
+                        <select name="route_id" id="route_id" class="form-control" required>
                             <option value="0">Please select route</option>
                             @foreach ($routes as $route)
                             <option value="{{$route->id}}">

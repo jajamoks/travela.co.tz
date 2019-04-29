@@ -12,7 +12,7 @@
                     <div class="seatCharts-seat seatCharts-cell "></div>
                     <div class="seatCharts-cell seatCharts-space"></div>
                     <div class="seatCharts-cell seatCharts-space"></div>
-                    <div class="seatCharts-cell seatCharts-space reserved"></div>
+                    <div class="seatCharts-cell seatCharts-space reserved">D</div>
                 </div>
 
                 <div class="seatCharts-row">
@@ -114,9 +114,6 @@
                     <div> Reserved</div>
                 </div>
             </div>
-
         </div>
-
     </div>
-
 </div>

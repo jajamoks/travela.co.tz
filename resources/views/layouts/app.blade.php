@@ -44,6 +44,7 @@
         <div class="page-container">
             @include('inc.headerDesktop')
             @yield('content')
+            @include('inc.modals')
         </div>
     </div>
 
