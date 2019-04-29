@@ -10,7 +10,7 @@ class BussesTableSeeder extends Seeder
 
        for ($i = 0; $i < 1; $i++) {
            $bus = App\Bus::create([
-             'seats' => '35',
+             'seats' => '48',
              'name' => $faker->randomElement(['YOUTONG', 'HIGHER', 'MORCOPOLO']),
              'type' => $faker->randomElement(['Luxury', 'Semi-Luxury', 'Ordinary']),
              'registrationNumber' => 'T ' .$faker->numberBetween($min = 100, $max = 999). ' ' .Str::random(3),

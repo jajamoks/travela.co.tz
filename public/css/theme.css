@@ -1,17 +1,21 @@
-div[value="Reserved"] {
-  background-color: #dc3545;
-}
-
-div .seatCharts-cell:nth-child(2n+1) {
-  margin-left: 40px;
-}
-
 div[value="Available"] {
     background-color: #3a78c3;
 }
 
 div[value="Booked"] {
     background-color: #472B34;
+}
+
+div[value="Processing"] {
+  background-color: #B9DEA0;
+}
+
+div[value="Reserved"] {
+  background-color: #dc3545;
+}
+
+div .seatColor:nth-child(2n+1) {
+  margin-left: 40px;
 }
 
 .seatChartsContainer {

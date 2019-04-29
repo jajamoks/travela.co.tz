@@ -25,8 +25,8 @@ class TicketController extends Controller
       $routes = Route::all();
       $all_seats = Seat::all();
       $seats = Seat::all()->where('status', 'Available');
-      return view('tickets.newTicket')->with('routes', $routes)
-      ->with('seats', $seats)->with('all_seats', $all_seats);
+      return view('tickets.newTicket')->with('seats', $seats)
+      ->with('routes', $routes)->with('all_seats', $all_seats);
     }
 
     public function store(Request $request)
