@@ -12,18 +12,15 @@
 
         <div class="seatInfoContainer">
             <div class="seatCharts-row">
-                <div class="seatCharts-cell seatCharts-space"></div>
-                <div class="seatCharts-cell unavailable seatCharts-space"></div>
+                <div class="seatCharts-cell seatCharts-space" value="Booked"></div>
                 <div> Booked</div>
             </div>
             <div class="seatCharts-row">
-                <div class="seatCharts-cell seatCharts-space"></div>
-                <div class="seatCharts-cell available seatCharts-space"></div>
+                <div class="seatCharts-cell seatCharts-space" value="Available"></div>
                 <div> Available</div>
             </div>
             <div class="seatCharts-row">
-                <div class="seatCharts-cell seatCharts-space"></div>
-                <div class="seatCharts-cell reserved seatCharts-space"></div>
+                <div class="seatCharts-cell seatCharts-space" value="Reserved"></div>
                 <div> Reserved</div>
             </div>
         </div>
