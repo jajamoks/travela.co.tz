@@ -8,7 +8,7 @@ class RoutesTableSeeder extends Seeder
     {
       $faker = Faker\Factory::create();
 
-       for ($i = 0; $i < 3; $i++) {
+       for ($i = 0; $i < 1; $i++) {
            $route = App\Route::create([
              'bus_id' => $faker->randomElement(['1']),
              'toPlace' => $faker->randomElement(['Ken', 'Uga', 'Dar']),

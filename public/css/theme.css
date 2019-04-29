@@ -1,3 +1,15 @@
+.reserved{
+  background-color: #dc3545;
+}
+
+div[value="Available"] {
+    background-color: #3a78c3;
+}
+
+div[value="Booked"] {
+    background-color: #472B34;
+}
+
 .seatChartsContainer {
     border-right: 1px dotted #adadad;
     width: 250px;
@@ -19,16 +31,7 @@
     background-color: white;
 }
 
-.unavailable{
-  background-color: #472B34;
-}
-.available{
-      background-color: #3a78c3;
-}
 
-.reserved{
-  background-color: #dc3545;
-}
 
 .seatCharts-cell {
     height: 25px;

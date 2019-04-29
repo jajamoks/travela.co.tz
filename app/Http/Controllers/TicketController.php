@@ -16,14 +16,17 @@ class TicketController extends Controller
     {
       $tickets = Ticket::all();
       $passengers = Passenger::all();
-      return view('tickets.index')->with('tickets', $tickets)->with('passengers', $passengers);
+      return view('tickets.index')->with('tickets', $tickets)
+      ->with('passengers', $passengers);
     }
 
     public function create()
     {
       $routes = Route::all();
+      $all_seats = Seat::all();
       $seats = Seat::all()->where('status', 'Available');
-      return view('tickets.newTicket')->with('routes', $routes)->with('seats', $seats);
+      return view('tickets.newTicket')->with('routes', $routes)
+      ->with('seats', $seats)->with('all_seats', $all_seats);
     }
 
     public function store(Request $request)
