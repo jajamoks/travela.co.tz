@@ -8,7 +8,7 @@ class BussesTableSeeder extends Seeder
     {
       $faker = Faker\Factory::create();
 
-       for ($i = 0; $i < 5; $i++) {
+       for ($i = 0; $i < 1; $i++) {
            $bus = App\Bus::create([
              'seats' => '35',
              'name' => $faker->randomElement(['YOUTONG', 'HIGHER', 'MORCOPOLO']),

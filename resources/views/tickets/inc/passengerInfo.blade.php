@@ -56,6 +56,19 @@
                 </div>
                 <div class="row form-group">
                     <div class="col col-md-3">
+                        <label for="route_id" class=" form-control-label">Seat</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <select name="route_id" id="route_id" class="form-control" required>
+                            <option value="0">Please select seat</option>
+                            @foreach ($seats as $seat)
+                            <option value="{{$seat->id}}">{{$seat->id}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col col-md-3">
                         <label for="additionalInfo" class=" form-control-label">Additinal Info</label>
                     </div>
                     <div class="col-12 col-md-9">

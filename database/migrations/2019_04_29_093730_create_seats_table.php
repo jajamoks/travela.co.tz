@@ -6,24 +6,17 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateSeatsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('seats', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('bus_id');
+             // IDEA: Available , Booked , In Process
+            $table->string('status');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('seats');

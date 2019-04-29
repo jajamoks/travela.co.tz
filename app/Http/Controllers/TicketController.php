@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Seat;
 use App\Route;
 use App\Ticket;
 use App\Passenger;
@@ -15,14 +16,14 @@ class TicketController extends Controller
     {
       $tickets = Ticket::all();
       $passengers = Passenger::all();
-      return view('tickets.index')->with('tickets', $tickets)
-      ->with('passengers', $passengers);
+      return view('tickets.index')->with('tickets', $tickets)->with('passengers', $passengers);
     }
 
     public function create()
     {
       $routes = Route::all();
-      return view('tickets.newTicket')->with('routes', $routes);
+      $seats = Seat::all()->where('status', 'Available');
+      return view('tickets.newTicket')->with('routes', $routes)->with('seats', $seats);
     }
 
     public function store(Request $request)
