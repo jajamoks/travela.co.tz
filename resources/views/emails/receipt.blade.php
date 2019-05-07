@@ -10,8 +10,8 @@
                         <p>You are receiving this email because your ticket has been processed.</p>
                         <p>
                           Your ticket summary,  <br>
-                          <b>Route: </b> {{$fromPlace}} - {{$toPlace}} <br>
-                          <b>Travelling Date :</b> {{$bookedDate}} <br>
+                          {{-- <b>Route: </b> {{$fromPlace}} - {{$toPlace}} <br> --}}
+                          <b>Travelling Date :</b> {{date('d M Y', strtotime($bookedDate))}} at {departure_time} <br>
                           <b>Seat(s) Number : </b> 40 <br>
                           <b>Issued By : </b> {{$issuedBy}} <br>
                           <b>Issued On :</b> {{$issuedOn}}
