@@ -29,7 +29,7 @@ class StaffController extends Controller
       $user->city = $request['city'];
       $user->email = $request['email'];
       $user->number = $request['number'];
-      $user->password = bcrypt('qazplm');
+      $user->password = bcrypt('qazwsx');
       $user->save();
 
       if ($request['role'] === '1') {

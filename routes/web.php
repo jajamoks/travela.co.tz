@@ -14,6 +14,10 @@ Route::get('/', 'HomeController@index');
 // Dashboard
 Route::get('/dashboard', 'DashboardController@index');
 
+// Change Password
+Route::get('/changePassword', 'PasswordController@index');
+Route::post('/changePasswordForm', 'PasswordController@update');
+
 // Prefix Admin
 Route::prefix('admin')->group(function () {
     // Staffs
@@ -30,10 +34,6 @@ Route::prefix('admin')->group(function () {
     // Route
     Route::get('/routes/addRoute', 'RouteController@create');
     Route::resource('/routes', 'RouteController')->only(['index', 'update', 'store', 'destroy']);
-
-    // Agents
-    // Route::get('/agents/addAgent', 'AgentController@create');
-    // Route::resource('/agents', 'AgentController')->only(['index', 'store', 'update', 'destroy']);
 
     // Tickets
     Route::get('/tickets/newTicket', 'TicketController@create');

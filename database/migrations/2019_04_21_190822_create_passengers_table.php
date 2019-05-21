@@ -10,7 +10,7 @@ class CreatePassengersTable extends Migration
     {
         Schema::create('passengers', function (Blueprint $table) {
           $table->bigIncrements('id');
-          $table->integer("ticket_id");
+          $table->integer("ticket_id")->nullable();
           $table->string("name");
           $table->string("email")->nullable();
           $table->integer("number")->nullable();

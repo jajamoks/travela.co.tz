@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="account-dropdown__body">
                                     <div class="account-dropdown__item">
-                                        <a href="#">
+                                        <a href="/changePassword">
                                             <i class="zmdi zmdi-lock"></i>Change Password</a>
                                     </div>
                                     <div class="account-dropdown__item">

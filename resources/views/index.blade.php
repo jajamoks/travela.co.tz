@@ -83,7 +83,6 @@
             @else
             <a href="{{ route('login') }}">Staff Login</a>
 
-            // Register Btn
             {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
             @endif --}}

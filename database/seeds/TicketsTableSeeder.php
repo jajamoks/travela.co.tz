@@ -10,7 +10,7 @@ class TicketsTableSeeder extends Seeder
        for ($i = 0; $i < 7; $i++) {
            $ticket = App\Ticket::create([
                'route_id' => '1',
-               'passenger_id' => $faker->randomElement([1, 2, 3]),
+               'passenger_id' => $faker->randomElement([1, 2, 3, 4, 5]),
                'issuedBy' => $faker->name,
                'bookedDate' => $faker->date,
                'additionalInfo' => $faker->text(40),
