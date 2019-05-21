@@ -14,7 +14,10 @@
                                     <th>Id</th>
                                     <th>Name</th>
                                     <th>Number</th>
-                                    <th>Email</th>
+                                    <th>Route</th>
+                                    <th>Bus No</th>
+                                    <th>Seat No</th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -23,7 +26,9 @@
                                     <td>{{$passenger->id}}</td>
                                     <td>{{$passenger->name}}</td>
                                     <td>{{$passenger->number}}</td>
-                                    <td>{{$passenger->email}}</td>
+                                    <td>Aru - Mby</td>
+                                    <td>T 434 BTS</td>
+                                    <td>34</td>
                                 </tr>
                                 @endforeach
                             </tbody>

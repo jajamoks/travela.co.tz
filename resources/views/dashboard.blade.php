@@ -89,7 +89,7 @@
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
                               <tr>
-                                  <th>Ticket Id</th>
+                                  <th>Ticket</th>
                                   <th>Passenger</th>
                                   <th>Bus</th>
                                   <th>Route</th>

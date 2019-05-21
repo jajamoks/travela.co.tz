@@ -49,7 +49,7 @@ class TicketController extends Controller
       //   'status' => 'Booked'
       // ]);
 
-      Mail::to($request->email)->send(new Receipt($passenger));
+      // Mail::to($request->email)->send(new Receipt($passenger));
 
       return redirect('admin/tickets');
     }
