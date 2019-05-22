@@ -20,8 +20,8 @@ class Receipt extends Mailable
     {
         return $this->view('emails.receipt')
         ->with('name', $this->passenger->name)
-        ->with('issuedBy', $this->passenger->ticket->issuedBy)
-        ->with('issuedOn', $this->passenger->ticket->created_at)
+        // ->with('issuedBy', $this->passenger->ticket->issuedBy)
+        // ->with('issuedOn', $this->passenger->ticket->created_at)
         ->with('bookedDate', $this->passenger->ticket->bookedDate);
         // ->with('toPlace', $this->passenger->ticket->route->toPlace)
         // ->with('fromPlace', $this->passenger->ticket->route->fromPlace);
