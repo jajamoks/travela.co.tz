@@ -63,10 +63,10 @@
                                 </div>
                                 <div class="row form-group">
                                     <div class="col col-md-3">
-                                        <label for="route_id" class=" form-control-label">Seat</label>
+                                        <label for="seat_id" class=" form-control-label">Seat</label>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <select name="route_id" id="route_id" class="form-control" required>
+                                        <select name="seat_id" id="seat_id" class="form-control" required>
                                             <option value="0">Please select seat</option>
                                             @foreach ($seats as $seat)
                                             <option value="{{$seat->id}}">{{$seat->id}}</option>
