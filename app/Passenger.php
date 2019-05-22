@@ -8,4 +8,9 @@ class Passenger extends Model
 {
     protected $fillable = ['name', 'number', 'email'];
 
+    public function ticket()
+    {
+        return $this->hasOne(Ticket::class);
+    }
+
 }
