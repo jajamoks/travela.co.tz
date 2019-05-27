@@ -38,4 +38,8 @@ Route::prefix('admin')->group(function () {
     // Tickets
     Route::get('/tickets/newTicket', 'TicketController@create');
     Route::resource('/tickets', 'TicketController')->only(['index', 'store', 'update', 'destroy']);
+
+    // Schedule
+    Route::get('/schedule/scheduleTrip', 'ScheduleController@create');
+    Route::resource('/schedule', 'ScheduleController')->only(['index', 'store', 'update', 'destroy']);
 });

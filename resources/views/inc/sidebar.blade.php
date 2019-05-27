@@ -91,6 +91,24 @@
                         </li>
                     </ul>
                 </li>
+                <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="fas fa-user"></i>Schedule Trip
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="/admin/schedule/scheduleTrip">
+                                <i class="fas fa-plus"></i>Add new</a>
+                        </li>
+                        <li>
+                            <a href="/admin/schedule">
+                                <i class="far fa-check-square"></i>View All</a>
+                        </li>
+                    </ul>
+                </li>
                 @endif
 
             </ul>
