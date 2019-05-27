@@ -13,6 +13,6 @@ class Route extends Model
     ];
 
     public function bus(){
-      return $this->belongsTo(Bus::class);
+      return $this->hasMany(Bus::class);
     }
 }

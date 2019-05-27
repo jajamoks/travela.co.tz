@@ -102,7 +102,7 @@
                                   <tr>
                                       <td>{{$ticket->id}}</td>
                                       <td>{{$ticket->passenger->name}}</td>
-                                      <td>{{$ticket->route->bus->registrationNumber}}</td>
+                                      {{--<td>{{$ticket->route->bus->registrationNumber}}</td>--}}
                                       <td>{{$ticket->route->fromPlace}} - {{$ticket->route->toPlace}}</td>
                                       <td>{{date('d M Y', strtotime($ticket->bookedDate))}}</td>
                                       <td class="text-right">{{number_format($ticket->route->amount)}}</td>

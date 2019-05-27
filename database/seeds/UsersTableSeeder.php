@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
       $admin->city = 'localhost';
       $admin->name = 'Test Admin';
       $admin->number = 'Port 8080';
-      $admin->email = 'admin@bts.me';
+      $admin->email = 'admin@obtb.dit';
       $admin->password = bcrypt('qazwsx');
       $admin->save();
       $admin->roles()->attach($role_admin);
@@ -27,7 +27,7 @@ class UsersTableSeeder extends Seeder
       $agent->city = 'localhost';
       $agent->name = 'Test Agent';
       $agent->number = 'Port 8080';
-      $agent->email = 'agent@bts.me';
+      $agent->email = 'agent@obtb.dit';
       $agent->password = bcrypt('qazwsx');
       $agent->save();
       $agent->roles()->attach($role_agent);
