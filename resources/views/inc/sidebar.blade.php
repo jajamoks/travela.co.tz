@@ -104,7 +104,7 @@
                                 <i class="fas fa-plus"></i>Add new</a>
                         </li>
                         <li>
-                            <a href="/admin/schedule">
+                            <a href="/admin/schedules">
                                 <i class="far fa-check-square"></i>View All</a>
                         </li>
                     </ul>

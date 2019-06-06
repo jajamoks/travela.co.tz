@@ -41,5 +41,5 @@ Route::prefix('admin')->group(function () {
 
     // Schedule
     Route::get('/schedule/scheduleTrip', 'ScheduleController@create');
-    Route::resource('/schedule', 'ScheduleController')->only(['index', 'store', 'update', 'destroy']);
+    Route::resource('/schedules', 'ScheduleController')->only(['index', 'store', 'update', 'destroy']);
 });
