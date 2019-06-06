@@ -12,7 +12,7 @@ class Route extends Model
       'departure_time', 'fromPlace', 'toPlace',
     ];
 
-    public function bus(){
-      return $this->hasMany(Bus::class);
-    }
+    // public function bus(){
+    //   return $this->hasMany(Bus::class);
+    // }
 }

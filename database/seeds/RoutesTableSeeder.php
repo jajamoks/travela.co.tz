@@ -10,7 +10,6 @@ class RoutesTableSeeder extends Seeder
 
        for ($i = 0; $i < 1; $i++) {
            $route = App\Route::create([
-             'bus_id' => $faker->randomElement(['1']),
              'toPlace' => $faker->randomElement(['Tng', 'Dar']),
              'fromPlace' => $faker->randomElement(['Aru', 'Mby']),
              'amount' => $faker->randomElement(['34000', '36000' , '37000']),
