@@ -11,8 +11,10 @@ class ScheduleController extends Controller
 {
     public function index()
     {
+        $busses = Bus::all();
         $schedules = Schedule::all();
-        return view('schedulers.index')->with('schedules', $schedules);
+        return view('schedulers.index')->with('schedules', $schedules)
+        ->with('busses', $busses);
     }
 
     public function create()
@@ -26,7 +28,10 @@ class ScheduleController extends Controller
 
     public function store(Request $request)
     {
-        $schedule = Schedule::create($request->only('route_id', 'bus_id','scheduledDate'));
+        $schedule = Schedule::create($request->only(
+            'route_id', 'bus_id', 'scheduledDate'
+        ));
+        $schedule->routes()->attach([$request->input('route_id')]);
         $schedule->save();
 
         return redirect('admin/schedules');
@@ -44,7 +49,7 @@ class ScheduleController extends Controller
 
     public function update(Request $request, Schedule $schedule)
     {
-        //
+        
     }
 
     public function destroy(Schedule $schedule)

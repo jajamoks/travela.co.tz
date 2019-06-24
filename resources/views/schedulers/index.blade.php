@@ -21,6 +21,16 @@
                             <tbody>
                                 @foreach ($schedules as $schedule)
                                 <tr>
+                                    <td>
+                                        @foreach( $busses as $bus)
+                                        {{$bus->registrationNumber}}<br>
+                                    @endforeach
+                                    </td>
+                                    {{-- <td>
+                                        @foreach( $schedule->busses as $bus)
+                                            {{$bus->registrationNumber}}<br>
+                                        @endforeach
+                                    </td> --}}
                                     <td>{{$schedule->route_id}}</td>
                                     <td>{{$schedule->bus_id}}</td>
                                     <td>Action</td>
