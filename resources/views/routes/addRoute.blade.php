@@ -12,36 +12,86 @@
                             {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="bus-name" class="control-label mb-1">Bus Name</label>
-                                    <select id="bus-name" name="bus_id" type="text" class="form-control" aria-required="true" aria-invalid="false">
-                                        @foreach ($bus as $bus)
-                                        <option value="{{$bus->id}}">{{$bus->registrationNumber}}</option>
-                                        @endforeach
-                                    </select>
-                                    <input>
-                                </div>
-                                <div class="col-md-6 form-group">
                                     <label for="fromPlace" class="control-label mb-1">From Place</label>
-                                    <input id="fromPlace" name="fromPlace" type="text" class="form-control">
-                                    <span class="help-block" data-valmsg-for="fromPlace" data-valmsg-replace="true"></span>
+                                    <select class="c-select form-control selectpicker boxed" name="fromPlace"
+                                        data-show-subtext="true" data-live-search="true" title="Select a region">
+                                        <option value="0">Select</option>
+                                        <option value="Arusha ">Arusha </option>
+                                        <option value="Dar es Salaam">Dar es Salaam</option>
+                                        {{-- <option value="Kilimanjaro ">Kilimanjaro </option>
+                                        <option value="Tanga ">Tanga </option>
+                                        <option value="Morogoro ">Morogoro </option>
+                                        <option value="Pwani ">Pwani </option>
+                                        <option value="Dodoma ">Dodoma </option>
+                                        <option value="Lindi ">Lindi </option>
+                                        <option value="Mtwara ">Mtwara </option>
+                                        <option value="Ruvuma ">Ruvuma </option>
+                                        <option value="Iringa ">Iringa </option>
+                                        <option value="Mbeya ">Mbeya </option>
+                                        <option value="Singida ">Singida </option>
+                                        <option value="Tabora ">Tabora </option>
+                                        <option value="Rukwa ">Rukwa </option>
+                                        <option value="Kigoma ">Kigoma </option>
+                                        <option value="Shinyanga ">Shinyanga </option>
+                                        <option value="Kagera ">Kagera </option>
+                                        <option value="Mwanza ">Mwanza </option>
+                                        <option value="Mara ">Mara </option>
+                                        <option value="Manyara ">Manyara </option>
+                                        <option value="Njombe ">Njombe </option>
+                                        <option value="Katavi ">Katavi </option>
+                                        <option value="Simiyu ">Simiyu </option>
+                                        <option value="Geita ">Geita </option>
+                                        <option value="Songwe">Songwe</option> --}}
+                                    </select>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="toPlace" class="control-label mb-1">To Place</label>
-                                    <input id="toPlace" name="toPlace" type="text" class="form-control cc-exp">
-                                    <span class="help-block" data-valmsg-for="toPlace" data-valmsg-replace="true"></span>
+                                    <select class="c-select form-control selectpicker boxed" name="toPlace"
+                                        data-show-subtext="true" data-live-search="true" title="Select a region">
+                                        <option value="0">Select</option>
+                                        <option value="Arusha ">Arusha </option>
+                                        <option value="Dar es Salaam">Dar es Salaam</option>
+                                        {{-- <option value="Kilimanjaro ">Kilimanjaro </option>
+                                        <option value="Tanga ">Tanga </option>
+                                        <option value="Morogoro ">Morogoro </option>
+                                        <option value="Pwani ">Pwani </option>
+                                        <option value="Dodoma ">Dodoma </option>
+                                        <option value="Lindi ">Lindi </option>
+                                        <option value="Mtwara ">Mtwara </option>
+                                        <option value="Ruvuma ">Ruvuma </option>
+                                        <option value="Iringa ">Iringa </option>
+                                        <option value="Mbeya ">Mbeya </option>
+                                        <option value="Singida ">Singida </option>
+                                        <option value="Tabora ">Tabora </option>
+                                        <option value="Rukwa ">Rukwa </option>
+                                        <option value="Kigoma ">Kigoma </option>
+                                        <option value="Shinyanga ">Shinyanga </option>
+                                        <option value="Kagera ">Kagera </option>
+                                        <option value="Mwanza ">Mwanza </option>
+                                        <option value="Mara ">Mara </option>
+                                        <option value="Manyara ">Manyara </option>
+                                        <option value="Njombe ">Njombe </option>
+                                        <option value="Katavi ">Katavi </option>
+                                        <option value="Simiyu ">Simiyu </option>
+                                        <option value="Geita ">Geita </option>
+                                        <option value="Songwe">Songwe</option> --}}
+                                    </select>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="departure_time" class="control-label mb-1">Departure Time</label>
-                                    <input id="departure_time" name="departure_time" type="time" data-date-format="DD MMMM YYYY" class="form-control">
-                                    <span class="help-block" data-valmsg-for="departure_time" data-valmsg-replace="true"></span>
+                                    <input id="departure_time" name="departure_time" type="time"
+                                        data-date-format="DD MMMM YYYY" class="form-control">
+                                    <span class="help-block" data-valmsg-for="departure_time"
+                                        data-valmsg-replace="true"></span>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="arrival_time" class="control-label mb-1">Arrival Time</label>
                                     <input id="arrival_time" name="arrival_time" type="time" class="form-control">
-                                    <span class="help-block" data-valmsg-for="arrival_time" data-valmsg-replace="true"></span>
+                                    <span class="help-block" data-valmsg-for="arrival_time"
+                                        data-valmsg-replace="true"></span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-md">Add Route</button>
                         </form>
                     </div>
                 </div>

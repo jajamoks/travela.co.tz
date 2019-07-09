@@ -12,7 +12,13 @@ class Route extends Model
       'departure_time', 'fromPlace', 'toPlace',
     ];
 
-    public function bus(){
-      return $this->belongsTo(Bus::class);
+    public function Bus()
+    {
+        return $this->belongsToMany(Bus::class, 'schedules', 'route_id', 'bus_id');
+    }
+
+    public function schedules()
+    {
+      return $this->belongsToMany(Schedule::class);
     }
 }

@@ -35,16 +35,16 @@
                                 @endif
                             </div>
                             <div class="login-checkbox">
-                                <label>
+                                {{-- <label>
                                     <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>Remember Me
-                                </label>
-                                <label>
+                                </label> --}}
+                                {{-- <label>
                                   @if (Route::has('password.request'))
                                   <a class="btn btn-link" href="{{ route('password.request') }}">
                                       {{ __('Forgot Your Password?') }}
                                   </a>
                                   @endif
-                                </label>
+                                </label> --}}
                             </div>
                             <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
 

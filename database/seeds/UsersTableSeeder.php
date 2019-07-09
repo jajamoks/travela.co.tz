@@ -15,19 +15,19 @@ class UsersTableSeeder extends Seeder
 
 
       $admin = new User();
-      $admin->city = 'Dar es Salaam';
-      $admin->name = 'Admin';
+      $admin->city = 'Dar es salaam';
+      $admin->name = 'Super Admin';
       $admin->number = '+255 123 456 789';
-      $admin->email = 'admin@obtb.sys';
+      $admin->email = 'admin@obtb.dit';
       $admin->password = bcrypt('qazwsx');
       $admin->save();
       $admin->roles()->attach($role_admin);
 
       $agent = new User();
-      $agent->city = 'Arusha';
-      $agent->name = 'Agent';
+      $agent->city = 'Dar es salaam';
+      $agent->name = 'Super Agent';
       $agent->number = '+255 987 654 321';
-      $agent->email = 'agent@obtb.sys';
+      $agent->email = 'agent@obtb.dit';
       $agent->password = bcrypt('qazwsx');
       $agent->save();
       $agent->roles()->attach($role_agent);
