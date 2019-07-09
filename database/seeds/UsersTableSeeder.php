@@ -15,31 +15,21 @@ class UsersTableSeeder extends Seeder
 
 
       $admin = new User();
-      $admin->city = 'localhost';
-      $admin->name = 'Test Admin';
-      $admin->number = 'Port 8080';
+      $admin->city = 'Dar es salaam';
+      $admin->name = 'Super Admin';
+      $admin->number = '+255 123 456 789';
       $admin->email = 'admin@obtb.dit';
       $admin->password = bcrypt('qazwsx');
       $admin->save();
       $admin->roles()->attach($role_admin);
 
       $agent = new User();
-      $agent->city = 'localhost';
-      $agent->name = 'Test Agent';
-      $agent->number = 'Port 8080';
+      $agent->city = 'Dar es salaam';
+      $agent->name = 'Super Agent';
+      $agent->number = '+255 987 654 321';
       $agent->email = 'agent@obtb.dit';
       $agent->password = bcrypt('qazwsx');
       $agent->save();
       $agent->roles()->attach($role_agent);
-
-       // for ($i = 0; $i < 7; $i++) {
-       //     $user = App\User::create([
-       //         'name' => $faker->name,
-       //         'email' => $faker->UserName .'@bts.me',
-       //         'password' => bcrypt('qazwsx'),
-       //     ]);
-       //     $user->roles()->attach($role_agent);
-       //     $user->save();
-       // }
     }
 }

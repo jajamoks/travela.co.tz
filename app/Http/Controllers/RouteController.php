@@ -31,23 +31,10 @@ class RouteController extends Controller
       return redirect('admin/routes');
     }
 
-    public function show(Route $route)
-    {
-        //
-    }
-
-    public function edit(Route $route)
-    {
-        //
-    }
-
-    public function update(Request $request, Route $route)
-    {
-        //
-    }
-
-    public function destroy(Route $route)
-    {
-        //
+    public function destroy($id){
+      $route = Route::find($id);
+      $route->delete();
+      
+      return redirect('admin/routes');
     }
 }

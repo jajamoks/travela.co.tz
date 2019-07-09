@@ -26,7 +26,13 @@
                                     <td class="text-uppercase">{{$bus->registrationNumber}}</td>
                                     <td>{{$bus->type}}</td>
                                     <td class="text-right">{{$bus->seats}}</td>
-                                    <td>Action</td>
+                                    <td>
+                                        <form action="/admin/busses/{{$bus->id}}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>

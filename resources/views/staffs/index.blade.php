@@ -31,7 +31,13 @@
                                     </td>
                                     <td>{{$user->number}}</td>
                                     <td>{{$user->city}}</td>
-                                    <td>Action</td>
+                                    <td>
+                                        <form action="/admin/staffs/{{$user->id}}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
