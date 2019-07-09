@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Seat;
 use App\Route;
 use App\Ticket;
+use App\Schedule;
 use App\Passenger;
 use App\Mail\Receipt;
 use Illuminate\Http\Request;
@@ -15,8 +16,12 @@ class TicketController extends Controller
     public function index()
     {
       $tickets = Ticket::all();
+      $schedule = Schedule::all();
       $passengers = Passenger::all();
-      return view('tickets.index')->with('tickets', $tickets)
+
+      return view('tickets.index')
+      ->with('tickets', $tickets)
+      ->with('schedule', $schedule)
       ->with('passengers', $passengers);
     }
 
@@ -24,9 +29,14 @@ class TicketController extends Controller
     {
       $routes = Route::all();
       $all_seats = Seat::all();
+      $schedule = Schedule::all();
       $seats = Seat::all()->where('status', 'Available');
-      return view('tickets.newTicket')->with('seats', $seats)
-      ->with('routes', $routes)->with('all_seats', $all_seats);
+      
+      return view('tickets.newTicket')
+      ->with('seats', $seats)
+      ->with('routes', $routes)
+      ->with('schedule', $schedule)
+      ->with('all_seats', $all_seats);
     }
 
     public function store(Request $request)

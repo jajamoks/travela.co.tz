@@ -47,6 +47,8 @@ class ScheduleController extends Controller
         $routeId = Route::find($schedule->id);
         
         $schedule->delete();      
-        $schedule->routes()->attach($routeId);
+        $schedule->routes()->detach($routeId);
+
+        return redirect('admin/schedules');
     }
 }

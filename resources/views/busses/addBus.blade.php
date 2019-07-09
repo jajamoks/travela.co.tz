@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="seats" class="control-label mb-1">Seats</label>
-                                    <input id="seats" name="seats" type="number" class="form-control cc-exp" required>
+                                    <input id="seats" name="seats" value="48" type="number" class="form-control cc-exp" readonly required>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-md">Add Bus</button>
