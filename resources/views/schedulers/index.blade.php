@@ -24,16 +24,22 @@
                                     <td>
                                         @foreach( $busses as $bus)
                                         {{$bus->registrationNumber}}<br>
-                                    @endforeach
+                                        @endforeach
                                     </td>
                                     {{-- <td>
                                         @foreach( $schedule->busses as $bus)
                                             {{$bus->registrationNumber}}<br>
-                                        @endforeach
+                                    @endforeach
                                     </td> --}}
                                     <td>{{$schedule->route_id}}</td>
                                     <td>{{$schedule->bus_id}}</td>
-                                    <td>Action</td>
+                                    <td>
+                                        <form action="/admin/schedules/{{$schedule->id}}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>

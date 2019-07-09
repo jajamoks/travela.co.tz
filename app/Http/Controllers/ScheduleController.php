@@ -24,6 +24,8 @@ class ScheduleController extends Controller
         return view('schedulers.scheduleTrip')
         ->with('routes', $routes)
         ->with('busses', $busses);
+
+
     }
 
     public function store(Request $request)
@@ -31,29 +33,20 @@ class ScheduleController extends Controller
         $schedule = Schedule::create($request->only(
             'route_id', 'bus_id', 'scheduledDate'
         ));
-        $schedule->routes()->attach([$request->input('route_id')]);
         $schedule->save();
+
+        $routeId = Route::find($schedule->id);
+        $schedule->routes()->attach($routeId);
 
         return redirect('admin/schedules');
     }
 
-    public function show(Schedule $schedule)
+    public function destroy($id)
     {
-        //
-    }
-
-    public function edit(Schedule $schedule)
-    {
-        //
-    }
-
-    public function update(Request $request, Schedule $schedule)
-    {
+        $schedule = Schedule::find($id);
+        $routeId = Route::find($schedule->id);
         
-    }
-
-    public function destroy(Schedule $schedule)
-    {
-        //
+        $schedule->delete();      
+        $schedule->routes()->attach($routeId);
     }
 }

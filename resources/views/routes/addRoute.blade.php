@@ -15,13 +15,14 @@
                                     <label for="fromPlace" class="control-label mb-1">From Place</label>
                                     <select class="c-select form-control selectpicker boxed" name="fromPlace"
                                         data-show-subtext="true" data-live-search="true" title="Select a region">
-                                        <option value="Dodoma ">Dodoma </option>
+                                        <option value="0">Select</option>
                                         <option value="Arusha ">Arusha </option>
-                                        <option value="Kilimanjaro ">Kilimanjaro </option>
+                                        <option value="Dar es Salaam">Dar es Salaam</option>
+                                        {{-- <option value="Kilimanjaro ">Kilimanjaro </option>
                                         <option value="Tanga ">Tanga </option>
                                         <option value="Morogoro ">Morogoro </option>
                                         <option value="Pwani ">Pwani </option>
-                                        <option value="Dar es Salaam">Dar es Salaam</option>
+                                        <option value="Dodoma ">Dodoma </option>
                                         <option value="Lindi ">Lindi </option>
                                         <option value="Mtwara ">Mtwara </option>
                                         <option value="Ruvuma ">Ruvuma </option>
@@ -40,20 +41,21 @@
                                         <option value="Katavi ">Katavi </option>
                                         <option value="Simiyu ">Simiyu </option>
                                         <option value="Geita ">Geita </option>
-                                        <option value="Songwe">Songwe</option>
+                                        <option value="Songwe">Songwe</option> --}}
                                     </select>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="toPlace" class="control-label mb-1">To Place</label>
                                     <select class="c-select form-control selectpicker boxed" name="toPlace"
                                         data-show-subtext="true" data-live-search="true" title="Select a region">
-                                        <option value="Dodoma ">Dodoma </option>
+                                        <option value="0">Select</option>
                                         <option value="Arusha ">Arusha </option>
-                                        <option value="Kilimanjaro ">Kilimanjaro </option>
+                                        <option value="Dar es Salaam">Dar es Salaam</option>
+                                        {{-- <option value="Kilimanjaro ">Kilimanjaro </option>
                                         <option value="Tanga ">Tanga </option>
                                         <option value="Morogoro ">Morogoro </option>
                                         <option value="Pwani ">Pwani </option>
-                                        <option value="Dar es Salaam">Dar es Salaam</option>
+                                        <option value="Dodoma ">Dodoma </option>
                                         <option value="Lindi ">Lindi </option>
                                         <option value="Mtwara ">Mtwara </option>
                                         <option value="Ruvuma ">Ruvuma </option>
@@ -72,7 +74,7 @@
                                         <option value="Katavi ">Katavi </option>
                                         <option value="Simiyu ">Simiyu </option>
                                         <option value="Geita ">Geita </option>
-                                        <option value="Songwe">Songwe</option>
+                                        <option value="Songwe">Songwe</option> --}}
                                     </select>
                                 </div>
                                 <div class="col-md-6 form-group">
