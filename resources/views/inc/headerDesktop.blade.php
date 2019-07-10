@@ -39,10 +39,10 @@
                                         <a href="/changePassword">
                                             <i class="zmdi zmdi-lock"></i>Change Password</a>
                                     </div>
-                                    {{-- <div class="account-dropdown__item">
+                                    <div class="account-dropdown__item">
                                         <a href="#">
                                             <i class="zmdi zmdi-info"></i>Documentation</a>
-                                    </div> --}}
+                                    </div>
                                 </div>
                                 <div class="account-dropdown__footer">
                                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

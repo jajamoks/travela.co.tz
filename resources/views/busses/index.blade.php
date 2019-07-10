@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
 <div class="main-content">
     <div class="section__content section__content--p30">
@@ -26,13 +27,7 @@
                                     <td class="text-uppercase">{{$bus->registrationNumber}}</td>
                                     <td>{{$bus->type}}</td>
                                     <td class="text-right">{{$bus->seats}}</td>
-                                    <td>
-                                        <form action="/admin/busses/{{$bus->id}}" method="post">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </form>
-                                    </td>
+                                    <td>Action</td>
                                 </tr>
                                 @endforeach
                             </tbody>

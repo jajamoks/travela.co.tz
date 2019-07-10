@@ -1,10 +1,16 @@
 @extends('layouts.appAuth')
+
 @section('content')
 <div class="page-wrapper">
     <div class="page-content--bge5">
         <div class="container">
             <div class="login-wrap">
                 <div class="login-content">
+                    <div class="login-logo">
+                        <a href="#">
+                            <img src="images/icon/logo.png" alt="CoolAdmin">
+                        </a>
+                    </div>
                     <div class="login-form">
                         <form action="" method="post">
                             <div class="form-group">

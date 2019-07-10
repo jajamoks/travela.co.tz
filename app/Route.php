@@ -12,6 +12,7 @@ class Route extends Model
       'departure_time', 'fromPlace', 'toPlace',
     ];
 
+<<<<<<< HEAD
     public function Bus()
     {
         return $this->belongsToMany(Bus::class, 'schedules', 'route_id', 'bus_id');
@@ -20,5 +21,9 @@ class Route extends Model
     public function schedule()
     {
       return $this->belongsToMany(Schedule::class);
+=======
+    public function bus(){
+      return $this->belongsTo(Bus::class);
+>>>>>>> parent of b29b0aa... Merge branch 'Dev'
     }
 }

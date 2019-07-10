@@ -18,4 +18,33 @@ class AgentController extends Controller
       return view('agents.addAgent');
 
     }
+    public function store(Request $request)
+    {
+      $agents = Agent::all();
+      $agent = Agent::create($request->only(
+        'name', 'email','number','city'
+      ));
+      $agent->save();
+      return redirect('agents.index')->with('agents', $agents);
+    }
+
+    public function show(Agent $agent)
+    {
+        //
+    }
+
+    public function edit(Agent $agent)
+    {
+        //
+    }
+
+    public function update(Request $request, Agent $agent)
+    {
+        //
+    }
+
+    public function destroy(Agent $agent)
+    {
+        //
+    }
 }

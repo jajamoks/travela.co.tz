@@ -27,10 +27,23 @@ class BusController extends Controller
       return redirect('admin/busses');
     }
 
-    public function destroy($id){
-      $bus = Bus::find($id);
-      $bus->delete();
-        
-      return redirect('admin/busses');
+    public function show(Bus $bus)
+    {
+        //
+    }
+
+    public function edit(Bus $bus)
+    {
+        //
+    }
+
+    public function update(Request $request, Bus $bus)
+    {
+        //
+    }
+
+    public function destroy(Bus $bus)
+    {
+        //
     }
 }

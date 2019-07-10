@@ -41,10 +41,4 @@ class StaffController extends Controller
 
       return redirect('admin/staffs');
     }
-
-    public function destroy($id){
-      $user = User::find($id);
-      $user->delete();
-      return redirect('admin/staffs');
-    }
 }

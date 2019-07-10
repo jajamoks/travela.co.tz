@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
 <div class="main-content">
     <div class="section__content section__content--p30">
@@ -10,6 +11,7 @@
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
+                                    <th>Bus Reg No.</th>
                                     <th>Board Point</th>
                                     <th>Bus Time</th>
                                     <th>Arrival Point</th>
@@ -20,17 +22,12 @@
                             <tbody>
                                 @foreach ($route as $route)
                                 <tr>
+                                    <td>{{$route->bus->registrationNumber}}</td>
                                     <td>{{$route->fromPlace}}</td>
                                     <td>{{$route->departure_time}}</td>
                                     <td>{{$route->toPlace}}</td>
                                     <td>{{$route->arrival_time}}</td>
-                                    <td>
-                                        <form action="/admin/routes/{{$route->id}}" method="post">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </form>
-                                    </td>
+                                    <td>Action</td>
                                 </tr>
                                 @endforeach
                             </tbody>

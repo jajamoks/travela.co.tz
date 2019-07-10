@@ -52,12 +52,12 @@
                                     <div class="col-12 col-md-9">
                                         <select name="route_id" id="route_id" class="form-control" required>
                                             <option value="0">Please select route</option>
-                                            {{-- @foreach ($schedule->routes as $route)
+                                            @foreach ($routes as $route)
                                             <option value="{{$route->id}}">
-                                                {{$route->fromPlace}} - {{$route->toPlace}} - 
+                                                {{$route->fromPlace}} - {{$route->toPlace}} - {{$route->bus->registrationNumber}} -
                                                 {{date("h : i A", strtotime($route->departure_time))}}
                                             </option>
-                                            @endforeach --}}
+                                            @endforeach
                                         </select>
                                     </div>
                                 </div>
