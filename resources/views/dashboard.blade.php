@@ -70,7 +70,7 @@
                                     <i class="zmdi zmdi-money"></i>
                                 </div>
                                 <div class="text">
-                                    <h3>{{number_format($total_earnings)}}</h3>
+                                    <h2>{{number_format($total_earnings)}}</h2>
                                     <span>Total Earning</span>
                                 </div>
                             </div>
