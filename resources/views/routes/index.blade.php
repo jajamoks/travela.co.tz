@@ -15,7 +15,7 @@
                                     <th>Board Point</th>
                                     <th>Bus Time</th>
                                     <th>Arrival Point</th>
-                                    <th>Arrival Time</th>
+                                    <th>Amount</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -26,7 +26,7 @@
                                     <td>{{$route->fromPlace}}</td>
                                     <td>{{$route->departure_time}}</td>
                                     <td>{{$route->toPlace}}</td>
-                                    <td>{{$route->arrival_time}}</td>
+                                    <td>{{$route->amount}}</td>
                                     <td>
                                         <form action="/admin/routes/{{$route->id}}" method="post">
                                             @csrf

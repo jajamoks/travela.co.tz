@@ -12,7 +12,7 @@
                             {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <label for="bus-name" class="control-label mb-1">Bus Name</label>
+                                    <label for="bus-name" class="control-label">Bus Name</label>
                                     <select id="bus-name" name="bus_id" type="text" class="form-control" aria-required="true" aria-invalid="false">
                                         @foreach ($bus as $bus)
                                         <option value="{{$bus->id}}">{{$bus->registrationNumber}}</option>
@@ -21,7 +21,7 @@
                                     <input>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="fromPlace" class="control-label mb-1">From Place</label>
+                                    <label for="fromPlace" class="control-label">From Place</label>
                                     <select class="c-select form-control selectpicker boxed" name="fromPlace"
                                         data-show-subtext="true" data-live-search="true" title="Select a region">
                                         <option value="Non Selected">Select City</option>
@@ -54,7 +54,7 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="toPlace" class="control-label mb-1">To Place</label>
+                                    <label for="toPlace" class="control-label">To Place</label>
                                     <select class="c-select form-control selectpicker boxed" name="toPlace"
                                         data-show-subtext="true" data-live-search="true" title="Select a region">
                                         <option value="Non Selected">Select City</option>
@@ -95,6 +95,10 @@
                                     <label for="arrival_time" class="control-label mb-1">Arrival Time</label>
                                     <input id="arrival_time" name="arrival_time" type="time" class="form-control">
                                     <span class="help-block" data-valmsg-for="arrival_time" data-valmsg-replace="true"></span>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="amount" class="control-label mb-1">Price</label>
+                                    <input id="amount" name="amount" type="number" class="form-control">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-md">Add Route</button>

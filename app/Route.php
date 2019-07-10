@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Route extends Model
 {
     protected $fillable = [
-      'bus_id', 'price', 'arrival_time',
+      'bus_id', 'amount', 'arrival_time',
       'departure_time', 'fromPlace', 'toPlace',
     ];
 

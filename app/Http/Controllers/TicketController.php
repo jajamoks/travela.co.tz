@@ -48,13 +48,19 @@ class TicketController extends Controller
         'additionalInfo' => $request->input('additionalInfo'),
       ]);
 
+      $ticket = Ticket::find($passenger->ticket_id);
+      $amount = $ticket->route->amount;
+
+      $ticket->price = $amount;
+      $ticket->save();
+
       $seatId = $request->seat_id;
       $seat= Seat::find($seatId);
       $seat->update([
         'status' => 'Booked',
       ]);
 
-      Mail::to($request->email)->send(new Receipt($passenger));
+      // Mail::to($request->email)->send(new Receipt($passenger));
 
       return redirect('admin/tickets');
     }

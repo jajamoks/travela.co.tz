@@ -17,7 +17,7 @@ class dashboardController extends Controller
     public function index(Request $request)
     {
       $user = User::findOrFail($request->user()->id);
-      $total_earnings = Route::All()->sum('amount');
+      $total_earnings = Ticket::All()->sum('price');
       $total_tickets = Ticket::All()->count();
       $total_staffs = User::All()->count();
       $total_busses = Bus::All()->count();

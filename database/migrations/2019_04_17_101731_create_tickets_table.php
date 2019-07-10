@@ -15,6 +15,7 @@ class CreateTicketsTable extends Migration
             $table->timestamp('bookedDate');
             $table->integer('passenger_id')->nullable();
             $table->string('additionalInfo')->nullable();
+            $table->string('price')->nullable();
             $table->timestamps();
         });
     }

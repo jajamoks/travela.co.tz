@@ -28,7 +28,7 @@
                                     <td>{{$passenger->number}}</td>
                                     <td>Aru - Mby</td>
                                     <td>T 434 BTS</td>
-                                    <td>34</td>
+                                    <td>{{$passenger->ticket->seat->id}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
