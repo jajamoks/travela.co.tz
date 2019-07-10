@@ -21,7 +21,7 @@
                                 </div>
                                 
                             </div>
-                            <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-md">Change Password</button>
                         </form>
                     </div>
                 </div>
