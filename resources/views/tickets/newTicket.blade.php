@@ -139,10 +139,6 @@
                                     <div class="seatCharts-cell seatCharts-space seatColor" value="Reserved"></div>
                                     <div> Reserved</div>
                                 </div>
-                                <div class="seatCharts-row">
-                                    <div class="seatCharts-cell seatCharts-space seatColor" value="Processing"></div>
-                                    <div> Processing</div>
-                                </div>
                             </div>
                         </div>
                     </div>

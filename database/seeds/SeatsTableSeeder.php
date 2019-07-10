@@ -8,10 +8,10 @@ class SeatsTableSeeder extends Seeder
     {
       $faker = Faker\Factory::create();
 
-      for ($i = 0; $i < 48; $i++) {
+      for ($i = 0; $i < 40; $i++) {
           $seat = App\Seat::create([
             'bus_id' => '1',
-            'status' => $faker->randomElement(['Available', 'Booked', 'Processing'])
+            'status' => 'Available',
           ]);
           $seat->save();
       }

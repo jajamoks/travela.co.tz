@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Bus;
+use App\Seat;
 use Illuminate\Http\Request;
 
 class BusController extends Controller

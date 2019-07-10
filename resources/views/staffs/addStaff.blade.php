@@ -37,13 +37,36 @@
                                     <label for="city" class="control-label mb-1">Staff City</label>
                                     <select id="city" name="city" type="text" class="form-control" aria-required="true" aria-invalid="false">
                                         <option value="non-selected">Select City</option>
-                                        <option value="Moshi">Moshi</option>
-                                        <option value="Arusha">Arusha</option>
-                                        <option value="Dar es salaam">Dar es salaam</option>
+                                        <option value="Arusha ">Arusha </option>
+                                        <option value="Dar es Salaam">Dar es Salaam</option>
+                                        <option value="Kilimanjaro ">Kilimanjaro </option>
+                                        <option value="Tanga ">Tanga </option>
+                                        <option value="Morogoro ">Morogoro </option>
+                                        <option value="Pwani ">Pwani </option>
+                                        <option value="Dodoma ">Dodoma </option>
+                                        <option value="Lindi ">Lindi </option>
+                                        <option value="Mtwara ">Mtwara </option>
+                                        <option value="Ruvuma ">Ruvuma </option>
+                                        <option value="Iringa ">Iringa </option>
+                                        <option value="Mbeya ">Mbeya </option>
+                                        <option value="Singida ">Singida </option>
+                                        <option value="Tabora ">Tabora </option>
+                                        <option value="Rukwa ">Rukwa </option>
+                                        <option value="Kigoma ">Kigoma </option>
+                                        <option value="Shinyanga ">Shinyanga </option>
+                                        <option value="Kagera ">Kagera </option>
+                                        <option value="Mwanza ">Mwanza </option>
+                                        <option value="Mara ">Mara </option>
+                                        <option value="Manyara ">Manyara </option>
+                                        <option value="Njombe ">Njombe </option>
+                                        <option value="Katavi ">Katavi </option>
+                                        <option value="Simiyu ">Simiyu </option>
+                                        <option value="Geita ">Geita </option>
+                                        <option value="Songwe">Songwe</option>
                                     </select>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-md">Add Staff</button>
                         </form>
                     </div>
                 </div>

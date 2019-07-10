@@ -35,7 +35,7 @@
                                     <span class="help-block" data-valmsg-for="seats" data-valmsg-replace="true"></span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-md">Add</button>
                         </form>
                     </div>
                 </div>
