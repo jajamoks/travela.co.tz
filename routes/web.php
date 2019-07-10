@@ -22,7 +22,7 @@ Route::post('/changePasswordForm', 'PasswordController@update');
 Route::prefix('admin')->group(function () {
     // Staffs
     Route::get('/staffs/addStaff', 'StaffController@create');
-    Route::resource('/staffs','StaffController')->only(['index','store']);
+    Route::resource('/staffs','StaffController')->only(['index','store', 'update', 'destroy']);
 
     // Passengers
     Route::resource('/passengers', 'PassengerController')->only(['index', 'store', 'update', 'destroy']);

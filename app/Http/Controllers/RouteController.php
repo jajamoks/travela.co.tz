@@ -50,8 +50,10 @@ class RouteController extends Controller
         //
     }
 
-    public function destroy(Route $route)
-    {
-        //
+    public function destroy($id){
+      $route = Route::find($id);
+      $route->delete();
+      
+      return redirect('admin/routes');
     }
 }

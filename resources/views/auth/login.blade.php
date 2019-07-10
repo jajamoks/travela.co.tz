@@ -34,7 +34,7 @@
                                 </span>
                                 @endif
                             </div>
-                            <div class="login-checkbox">
+                            {{-- <div class="login-checkbox">
                                 <label>
                                     <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>Remember Me
                                 </label>
@@ -45,7 +45,7 @@
                                   </a>
                                   @endif
                                 </label>
-                            </div>
+                            </div> --}}
                             <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
 
                         </form>

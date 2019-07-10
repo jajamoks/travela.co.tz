@@ -27,7 +27,13 @@
                                     <td>{{$route->departure_time}}</td>
                                     <td>{{$route->toPlace}}</td>
                                     <td>{{$route->arrival_time}}</td>
-                                    <td>Action</td>
+                                    <td>
+                                        <form action="/admin/routes/{{$route->id}}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
