@@ -24,10 +24,10 @@
                                     <label for="fromPlace" class="control-label mb-1">From Place</label>
                                     <select class="c-select form-control selectpicker boxed" name="fromPlace"
                                         data-show-subtext="true" data-live-search="true" title="Select a region">
-                                        <option value="0">Select</option>
+                                        <option value="Non Selected">Select City</option>
                                         <option value="Arusha ">Arusha </option>
                                         <option value="Dar es Salaam">Dar es Salaam</option>
-                                        {{-- <option value="Kilimanjaro ">Kilimanjaro </option>
+                                        <option value="Kilimanjaro ">Kilimanjaro </option>
                                         <option value="Tanga ">Tanga </option>
                                         <option value="Morogoro ">Morogoro </option>
                                         <option value="Pwani ">Pwani </option>
@@ -50,14 +50,14 @@
                                         <option value="Katavi ">Katavi </option>
                                         <option value="Simiyu ">Simiyu </option>
                                         <option value="Geita ">Geita </option>
-                                        <option value="Songwe">Songwe</option> --}}
+                                        <option value="Songwe">Songwe</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6 form-group">
                                     <label for="toPlace" class="control-label mb-1">To Place</label>
                                     <select class="c-select form-control selectpicker boxed" name="toPlace"
                                         data-show-subtext="true" data-live-search="true" title="Select a region">
-                                        <option value>Select City</option>
+                                        <option value="Non Selected">Select City</option>
                                         <option value="Arusha ">Arusha </option>
                                         <option value="Dar es Salaam">Dar es Salaam</option>
                                         <option value="Kilimanjaro ">Kilimanjaro </option>
@@ -97,7 +97,7 @@
                                     <span class="help-block" data-valmsg-for="arrival_time" data-valmsg-replace="true"></span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-md">Add</button>
+                            <button type="submit" class="btn btn-primary btn-md">Add Route</button>
                         </form>
                     </div>
                 </div>

@@ -40,7 +40,6 @@ class TicketController extends Controller
       $passenger->ticket_id = $passenger->id;
       $passenger->save();
    
-
       Ticket::create([
         'passenger_id' => $passenger->id,
         'issuedBy' => $request->input('issuedBy'),
@@ -49,12 +48,15 @@ class TicketController extends Controller
         'additionalInfo' => $request->input('additionalInfo'),
       ]);
 
+      $seatId = $request->seat_id;
+      $seat= Seat::find($seatId);
+      $seat->update([
+        'status' => 'Booked',
+      ]);
 
       Mail::to($request->email)->send(new Receipt($passenger));
 
       return redirect('admin/tickets');
-
-
     }
 
     public function show(Ticket $ticket)

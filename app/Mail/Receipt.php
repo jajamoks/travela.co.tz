@@ -24,7 +24,8 @@ class Receipt extends Mailable
         ->with('issuedOn', $this->passenger->ticket->created_at)
         ->with('bookedDate', $this->passenger->ticket->bookedDate)
         ->with('toPlace', $this->passenger->ticket->route->toPlace)
-        ->with('departure', $this->passenger->ticket->route->departure_time)
-        ->with('fromPlace', $this->passenger->ticket->route->fromPlace);
+        ->with('seatNo', $this->passenger->ticket->route->fromPlace)
+        ->with('fromPlace', $this->passenger->ticket->route->fromPlace)
+        ->with('departure', $this->passenger->ticket->route->departure_time);
     }
 }

@@ -12,7 +12,7 @@
                         <p>
                             Your temporary login credentials are <br>
                             Email : {{$user->email}} <br>
-                            password : qazplm
+                            password : qazwsx
                         </p>
                         <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
                             <tbody>

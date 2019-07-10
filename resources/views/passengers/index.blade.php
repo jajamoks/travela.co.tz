@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="main-content">
     <div class="section__content section__content--p30">
@@ -7,6 +6,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="title-1 m-b-25">All Passengers</h2>
+                    @if (count($passengers) > 0)
                     <div class="table-responsive table--no-card m-b-40">
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
@@ -33,7 +33,10 @@
                                 @endforeach
                             </tbody>
                         </table>
-                    </div>
+                    </div> 
+                    @else
+                        <p>No Passenger Found</p>
+                    @endif
                 </div>
             </div>
         </div>

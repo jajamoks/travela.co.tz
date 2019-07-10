@@ -12,7 +12,7 @@
                           Your ticket summary,  <br>
                           <b>Travelling Date :</b> {{date('d M Y', strtotime($bookedDate))}} at {{$departure}} <br>
                           <b>Route: </b> {{$fromPlace}} - {{$toPlace}} <br>
-                          <b>Seat(s) Number : </b> 40 <br>
+                          <b>Seat(s) Number : </b> {{$seatNo}} <br>
                           <b>Issued By : </b> {{$issuedBy}} <br>
                           <b>Issued On :</b> {{$issuedOn}}
                         </p>
