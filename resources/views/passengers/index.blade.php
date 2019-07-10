@@ -14,10 +14,9 @@
                                     <th>Id</th>
                                     <th>Name</th>
                                     <th>Number</th>
+                                    <th>Travelling Date</th>
                                     <th>Route</th>
                                     <th>Bus No</th>
-                                    <th>Seat No</th>
-
                                 </tr>
                             </thead>
                             <tbody>
@@ -26,9 +25,12 @@
                                     <td>{{$passenger->id}}</td>
                                     <td>{{$passenger->name}}</td>
                                     <td>{{$passenger->number}}</td>
-                                    <td>Aru - Mby</td>
-                                    <td>T 434 BTS</td>
-                                    <td>{{$passenger->ticket->seat->id}}</td>
+                                    <td>{{$passenger->ticket->bookedDate}}</td>
+                                    <td>
+                                        {{$passenger->ticket->route->fromPlace}} - 
+                                        {{$passenger->ticket->route->toPlace}}
+                                    </td>
+                                    <td>{{$passenger->ticket->route->bus->registrationNumber}}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
