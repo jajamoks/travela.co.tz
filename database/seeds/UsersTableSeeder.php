@@ -13,7 +13,6 @@ class UsersTableSeeder extends Seeder
       $role_admin = Role::where('name', 'Admin')->first();
       $role_agent  = Role::where('name', 'Agent')->first();
 
-
       $admin = new User();
       $admin->city = 'Dar es salaam';
       $admin->name = 'Super Admin';

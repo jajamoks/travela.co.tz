@@ -17,7 +17,7 @@ class Route extends Model
         return $this->belongsToMany(Bus::class, 'schedules', 'route_id', 'bus_id');
     }
 
-    public function schedules()
+    public function schedule()
     {
       return $this->belongsToMany(Schedule::class);
     }

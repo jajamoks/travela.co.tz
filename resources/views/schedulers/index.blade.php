@@ -10,51 +10,51 @@
                         <table class="table table-borderless table-striped table-earning">
                             <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Bus Reg No</th>
                                     <th>From</th>
                                     <th>To</th>
                                     <th>Departure Time</th>
-                                    <th>Arrival Time</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($schedules as $schedule)
+                                <ul>
+                                    @foreach($schedules as $schedule)
+                                    @foreach($schedule->routes as $route)
+                                    {{ $route->id}}
+                                    @endforeach
+                                    @endforeach
+                                </ul>
+
+                                {{-- @foreach ($schedules as $schedule)
                                 <tr>
-                                    <td>
-                                        @foreach($busses as $bus)
-                                        {{$bus->registrationNumber}}<br>
-                                        @endforeach
-                                    </td>
-                                    <td>
-                                        @foreach( $schedule->routes as $route)
-                                        {{$route->fromPlace}}<br>
-                                        @endforeach
-                                    </td>
-                                    <td>
-                                        @foreach( $schedule->routes as $route)
-                                        {{$route->toPlace}}<br>
-                                        @endforeach
-                                    </td>
-                                    <td>
-                                        @foreach( $schedule->routes as $route)
-                                        {{$route->arrival_time}}<br>
-                                        @endforeach
-                                    </td>
-                                    <td>
-                                        @foreach( $schedule->routes as $route)
-                                        {{$route->departure_time}}<br>
-                                        @endforeach
-                                    </td>
-                                    <td>
-                                        <form action="/admin/schedules/{{$schedule->id}}" method="post">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger">Delete</button>
-                                        </form>
-                                    </td>
+                                    <td>{{$schedule->id}}</td>
+                                <td>{{$schedule->route->fromPlace}}</td>
+                                <td>
+                                    @foreach( $schedule->routes as $route)
+                                    {{$route->fromPlace}}<br>
+                                    @endforeach
+                                </td>
+                                <td>
+                                    @foreach( $schedule->routes as $route)
+                                    {{$route->toPlace}}<br>
+                                    @endforeach
+                                </td>
+                                <td>
+                                    @foreach( $schedule->routes as $route)
+                                    {{$route->departure_time}}<br>
+                                    @endforeach
+                                </td>--}}
+                                {{-- <td>
+                                    <form action="/admin/schedules/{{$schedule->id}}" method="post">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </td> --}}
                                 </tr>
-                                @endforeach
+                                {{-- @endforeach --}}
                             </tbody>
                         </table>
                     </div>

@@ -13,7 +13,9 @@ class ScheduleController extends Controller
     {
         $busses = Bus::all();
         $schedules = Schedule::all();
-        return view('schedulers.index')->with('schedules', $schedules)
+        
+        return view('schedulers.index')
+        ->with('schedules', $schedules)
         ->with('busses', $busses);
     }
 
@@ -21,18 +23,18 @@ class ScheduleController extends Controller
     {
         $routes = Route::all();
         $busses = Bus::all();
+        
         return view('schedulers.scheduleTrip')
         ->with('routes', $routes)
         ->with('busses', $busses);
-
-
     }
 
     public function store(Request $request)
     {
-        $schedule = Schedule::create($request->only(
-            'route_id', 'bus_id', 'scheduledDate'
-        ));
+        $schedule = new Schedule();
+        $schedule->route_id = $request['route_id'];
+        $schedule->bus_id = $request['bus_id'];
+        $schedule->scheduledDate = $request['scheduledDate'];
         $schedule->save();
 
         $routeId = Route::find($schedule->id);
